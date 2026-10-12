@@ -46,7 +46,7 @@ Implementar los TTL del Word, límites de tiempo, reintentos y recuperación des
 
 Probar respuestas válidas, datos malformados, timeout, IGP ausente, un factor no sísmico ausente y dos factores ausentes. El frontend debe mostrar el estado recibido sin convertir fallos en valores cero.
 
-Desplegar React en Vercel y NestJS en un segundo proyecto compatible o un servidor independiente. Configurar HTTPS, `VITE_API_URL` y CORS. Verificar desde la web publicada que la API y los proveedores responden; verificar Supabase solo si se implementó la fase opcional. Guardar capturas y trazas reales.
+Desplegar React y NestJS en un único proyecto Vercel Services. Publicar `web` en `/` y `api` en `/api/*`, dejando `VITE_API_URL` vacío para usar el mismo dominio. Verificar desde la web publicada que la API y los proveedores responden; verificar Supabase solo si se implementó la fase opcional. Guardar capturas y trazas reales.
 
 **Cierre de fase:** URLs accesibles, pruebas de fallas completas, variables documentadas y evidencia con procedencia y fecha.
 

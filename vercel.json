@@ -1,0 +1,43 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "api": {
+      "root": "apps/api",
+      "framework": "nestjs",
+      "installCommand": "npm ci --prefix ../..",
+      "buildCommand": "npm run build --prefix ../.. --workspace @sigra/domain && npm run build --prefix ../.. --workspace @sigra/api",
+      "functions": {
+        "src/main.ts": {
+          "maxDuration": 120
+        }
+      }
+    },
+    "web": {
+      "root": "apps/web",
+      "framework": "vite",
+      "installCommand": "npm install --prefix ../..",
+      "buildCommand": "npm run build --prefix ../.. --workspace @sigra/web",
+      "outputDirectory": "dist",
+      "rewrites": [
+        {
+          "source": "/((?!assets/).*)",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": {
+        "service": "api"
+      }
+    },
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "web"
+      }
+    }
+  ]
+}

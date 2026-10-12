@@ -39,7 +39,7 @@ Se aplican caché por fuente, timeout de 25 segundos, hasta dos reintentos, vali
 
 ## Publicación y persistencia
 
-Está preparada la configuración para dos proyectos Vercel: web `apps/web` y API `apps/api`, con función NestJS de 120 segundos y compilación previa del dominio. En la web, `VITE_API_URL` debe ser el origen HTTPS real de la API, sin `/api/v1` ni barra final; la API debe autorizar el origen Web en `CORS_ORIGINS`.
+Está preparada la configuración de Vercel Services en el `vercel.json` raíz. Un solo proyecto construye `apps/web` y `apps/api`, publica React en `/` y NestJS en `/api/*`, y conserva la función API de 120 segundos con compilación previa del dominio. En este modo `VITE_API_URL` queda vacío porque React consulta la API en el mismo dominio. No se declara un binding: la llamada ocurre desde el navegador hacia la ruta pública, no desde una función de otro servicio.
 
 Supabase es una caché opcional de servidor para IGP, búsquedas INEI y agregados RENIEC. La migración habilita RLS y restringe acceso; las claves privadas se conservan en NestJS. No hay proyecto remoto conectado ni URL pública verificada. La guía incluye publicación por CLI sin exigir un repositorio Git y comprobaciones remotas: [DEPLOYMENT.md](docs/DEPLOYMENT.md), [caché y localidades](docs/CACHE_Y_LOCALIDADES.md).
 

@@ -4,32 +4,34 @@ Estado al 12 de octubre de 2026: configuración preparada; publicación y conexi
 
 ## Arquitectura de publicación
 
-Crear dos proyectos Vercel con acceso al mismo monorepositorio: uno para `apps/web` y otro para `apps/api`. React sirve el mapa y consulta el origen HTTPS de NestJS. NestJS consulta las fuentes oficiales y puede guardar respuestas agregadas en Supabase. La web pública no requiere iniciar sesión.
+Crear un proyecto Vercel Services desde la raíz del monorepositorio. El `vercel.json` raíz define `web` para `apps/web` y `api` para `apps/api`. React recibe el tráfico de `/` y NestJS recibe `/api/*` conservando la ruta original, por ejemplo `/api/v1/health`. NestJS consulta las fuentes oficiales y puede guardar respuestas agregadas en Supabase. La web pública no requiere iniciar sesión.
 
 Vercel reconoce `src/main.ts` como entrada NestJS y empaqueta la aplicación en una función. Esta configuración conserva los nueve servicios HTTP dentro de una API modular. El despliegue no convierte automáticamente los módulos en nueve procesos independientes. [Soporte oficial de NestJS](https://vercel.com/docs/frameworks/backend/nestjs).
 
 ## Comprobación de accesos
 
-La inspección local encontró Git, Node y npm. No encontró las CLIs `vercel` y `supabase` en el PATH, variables de acceso Vercel/Supabase, archivos de autenticación Vercel en las ubicaciones estándar ni `access-token` de Supabase. La carpeta `.supabase` contiene telemetría y trazas; su existencia no demuestra autenticación.
+La inspección local encontró Git, Node y npm. La CLI de Vercel puede ejecutarse mediante `npx`; no se detectaron variables de acceso Vercel/Supabase ni `access-token` de Supabase.
 
-El workspace no tiene `.git`, proyectos `.vercel` enlazados ni `supabase/config.toml`. No se consultaron secretos ni se crearon cuentas, proyectos remotos o despliegues. Estos resultados describen el acceso local disponible; no descartan que el usuario tenga una sesión en su navegador.
+El workspace ya es un repositorio Git conectado a GitHub. Todavía no hay un proyecto `.vercel` enlazado ni `supabase/config.toml`. No se consultaron secretos ni se crearon proyectos remotos o despliegues desde esta revisión; el usuario puede tener una sesión activa en el navegador.
 
-Para publicar hace falta una cuenta Vercel autenticada y seleccionar el equipo/proyectos correctos. Para activar persistencia hace falta un proyecto Supabase, ejecutar la migración y configurar su URL y clave de servidor.
+Para publicar hace falta una cuenta Vercel autenticada y seleccionar el equipo y proyecto correctos. Para activar persistencia hace falta un proyecto Supabase, ejecutar la migración y configurar su URL y clave de servidor.
 
-## Configuración de los proyectos Vercel
+## Configuración del proyecto Vercel Services
 
-| Ajuste | Web | API |
+| Ajuste | Servicio Web | Servicio API |
 | --- | --- | --- |
-| Root Directory | `apps/web` | `apps/api` |
+| Nombre | `web` | `api` |
+| Root | `apps/web` | `apps/api` |
 | Framework Preset | Vite | NestJS |
 | Node.js | 22.x | 22.x |
-| Include source files outside Root Directory in the Build Step | Activado | Activado |
 | Install Command | `npm install --prefix ../..` | `npm ci --prefix ../..` |
 | Build Command | `npm run build --prefix ../.. --workspace @sigra/web` | `npm run build --prefix ../.. --workspace @sigra/domain && npm run build --prefix ../.. --workspace @sigra/api` |
 | Output Directory | `dist` | Conservar el valor del framework; no establecer `dist` como sitio estático |
-| Configuración versionada | `apps/web/vercel.json` | `apps/api/vercel.json` |
+| Configuración activa | `vercel.json` raíz | `vercel.json` raíz |
 
-El acceso a archivos externos permite usar `package-lock.json`, npm workspaces y `packages/domain`. La API necesita compilar el dominio antes de resolver su entrada `dist/index.js`. React no importa ese paquete. [Monorepos](https://vercel.com/docs/monorepos), [acceso fuera del directorio raíz](https://vercel.com/docs/monorepos/monorepo-faq).
+Los comandos con `--prefix ../..` permiten usar `package-lock.json`, npm workspaces y `packages/domain`. La API necesita compilar el dominio antes de resolver su entrada `dist/index.js`. React no importa ese paquete. [Vercel Services](https://vercel.com/docs/services), [configuración de servicios](https://vercel.com/docs/services/config-reference).
+
+No hay bindings entre `web` y `api`. Vite produce archivos estáticos y el navegador llama públicamente a `/api/v1/...` en el mismo dominio. Los bindings solo están disponibles para código de servidor ejecutado en funciones; se añadirían si en el futuro otro backend llamara internamente a `api`. [Service bindings](https://vercel.com/docs/services/bindings).
 
 La API utiliza Fluid compute y solicita `maxDuration: 120` para `src/main.ts`. Sus consultas individuales tienen un tiempo límite de 25 segundos y reintentos; la composición tiene un presupuesto de 85 segundos. Confirmar que el proyecto aplica los 120 segundos en el resumen de la función publicada. [Configuración de duración](https://vercel.com/docs/functions/configuring-functions/duration), [vercel.json](https://vercel.com/docs/project-configuration/vercel-json).
 
@@ -39,8 +41,8 @@ Configurar valores en Vercel para Production y, si se van a probar, Preview. Cam
 
 | Variable | Proyecto | Valor / comportamiento |
 | --- | --- | --- |
-| `VITE_API_URL` | Web | Origen HTTPS de la API, por ejemplo el dominio asignado por Vercel. Sin `/api/v1` y sin barra final. |
-| `CORS_ORIGINS` | API | Orígenes HTTPS de las webs autorizadas, separados por comas. Sin rutas ni barra final. Añadir los orígenes exactos de los previews que se usarán. |
+| `VITE_API_URL` | Web | Dejar vacío con Services para usar el mismo dominio y la ruta pública `/api/v1`. Solo definir si la API se despliega por separado. |
+| `CORS_ORIGINS` | API | No es necesario para la web del mismo dominio. Usar únicamente para frontends adicionales alojados en otros orígenes. |
 | `HOST` | API | `0.0.0.0` en Vercel. Localmente el valor por defecto es `127.0.0.1`. |
 | `PORT` | API | Dejar sin definir en Vercel; usar el puerto proporcionado por el runtime. Localmente es `3001`. |
 | `API_KEY` | API | Dejar sin definir para la web pública actual. Si se activa, los clientes deben enviar `X-API-Key`; React no envía una clave secreta. |
@@ -64,7 +66,7 @@ npx --yes vercel@latest whoami
 npx --yes vercel@latest link
 ```
 
-En `link`, seleccionar el equipo y el proyecto **API**; configurar su Root Directory como `apps/api` y los ajustes de la tabla. Puede usarse un proyecto existente o crear uno al publicar. No enlazar una carpeta de otra tarea. El vínculo local queda en `.vercel`, ignorado por Git.
+En `link`, seleccionar el equipo y el único proyecto **SIGRA Services**. La raíz del proyecto debe ser `./`, porque el `vercel.json` principal está en la raíz y contiene los dos servicios. El vínculo local queda en `.vercel`, ignorado por Git.
 
 ```powershell
 npx --yes vercel@latest pull --environment=preview
@@ -72,17 +74,15 @@ npx --yes vercel@latest build
 npx --yes vercel@latest deploy
 ```
 
-Estas acciones producen un build para Vercel y un preview. Revisar primero `/api/v1/health`, `/api/v1/openapi.json` y una consulta real. Después publicar la API estable:
+Estas acciones producen un build y un preview con ambos servicios. Revisar primero la web, `/api/v1/health`, `/api/v1/openapi.json` y una consulta real. Después publicar el proyecto estable:
 
 ```powershell
 npx --yes vercel@latest deploy --prod
 ```
 
-Copiar el origen real obtenido a `VITE_API_URL` del proyecto Web. Volver a ejecutar `link` desde la raíz para seleccionar el proyecto **Web**, con Root Directory `apps/web`. Ejecutar `pull`, `build` y `deploy` para su preview; añadir ese origen exacto a `CORS_ORIGINS` de la API y volver a desplegarla. Al verificar la web, ejecutar `deploy --prod` y añadir también su origen estable a CORS. [CLI para monorepos](https://vercel.com/docs/monorepos), [guía oficial NestJS](https://vercel.com/kb/guide/ship-a-nestjs-app-on-vercel).
+No definir `VITE_API_URL`: el cliente ya usa `/api/v1/...` en el dominio compartido. No enviar `.vercel`, archivos `.env` ni tokens al repositorio público. [Vercel Services](https://vercel.com/docs/services), [guía oficial NestJS](https://vercel.com/docs/frameworks/backend/nestjs).
 
-Cada vez que se cambie entre Web y API, comprobar qué proyecto quedó enlazado. El estado y las variables descargados pertenecen al proyecto seleccionado. No enviar `.vercel`, archivos `.env` ni tokens a un repositorio público.
-
-La alternativa mediante Dashboard consiste en importar un repositorio y crear los dos proyectos con los ajustes anteriores. Si Deployment Protection está activo en un preview, comprobar que las consultas desde el navegador tienen acceso a la API: CORS no elimina la autenticación de Vercel.
+En el Dashboard, importar el repositorio con Root Directory `./` y conservar el preset **Services** que aparece en la detección. El `vercel.json` raíz aporta los nombres, builds y rutas. Si Deployment Protection está activo en un preview, abrir la web y la API dentro del mismo despliegue autenticado.
 
 ## Supabase: persistencia opcional de datos públicos
 
@@ -90,8 +90,8 @@ La integración prevista usa la Data API REST de Supabase desde NestJS. No neces
 
 1. Seleccionar un proyecto Supabase existente o crear el proyecto autorizado.
 2. Ejecutar `supabase/migrations/202610120001_public_cache.sql` en el SQL Editor de ese proyecto, tras revisar su contenido. La migración crea `public.sigra_public_cache`, habilita RLS y restringe el acceso al servidor.
-3. Copiar la URL y la clave secreta al proyecto **API** de Vercel mediante sus variables de entorno.
-4. Volver a desplegar la API y consultar datos reales para poblar la caché.
+3. Copiar la URL y la clave secreta a las variables de entorno del proyecto Vercel Services. La API las usa en tiempo de ejecución; nunca ponerlas en variables `VITE_*`.
+4. Volver a desplegar el proyecto y consultar datos reales para poblar la caché.
 5. Verificar que aparece una fila con fechas de obtención y caducidad; forzar una nueva instancia o un redeploy y verificar que puede leerla. Las pruebas con HTTP inyectado no sustituyen esta comprobación remota.
 
 La web no solicita login ni accede directamente a esa tabla. Las claves de servidor omiten RLS; se guardan sólo en NestJS. Para cualquier acceso futuro desde React, usar una clave publicable y políticas RLS específicas, sin permitir escritura anónima en la caché. [Claves y roles](https://supabase.com/docs/guides/getting-started/api-keys), [RLS](https://supabase.com/docs/guides/database/postgres/row-level-security).
@@ -105,20 +105,19 @@ Si en una fase posterior se decide usar SQL directo desde una función, Supabase
 Sustituir estos marcadores por URLs **obtenidas del despliegue**. Las URLs de ejemplo no son evidencia de publicación.
 
 ```powershell
-$taskApiOrigin = 'https://<dominio-api-real>'
-$taskWebOrigin = 'https://<dominio-web-real>'
-Invoke-RestMethod "$taskApiOrigin/api/v1/health"
-Invoke-RestMethod "$taskApiOrigin/api/v1/openapi.json" | Select-Object openapi
-$taskEvents = Invoke-RestMethod "$taskApiOrigin/api/v1/sismos?dias=7&mag_min=0"
+$taskSigraOrigin = 'https://<dominio-sigra-real>'
+Invoke-RestMethod "$taskSigraOrigin/api/v1/health"
+Invoke-RestMethod "$taskSigraOrigin/api/v1/openapi.json" | Select-Object openapi
+$taskEvents = Invoke-RestMethod "$taskSigraOrigin/api/v1/sismos?dias=7&mag_min=0"
 $taskEvents.meta | Select-Object source,sourceUrl,obtainedAt,status,fromCache
-Invoke-WebRequest "$taskApiOrigin/api/v1/sismos?dias=7&mag_min=0" -Headers @{ Origin=$taskWebOrigin } | Select-Object StatusCode,Headers
+Invoke-WebRequest $taskSigraOrigin | Select-Object StatusCode
 ```
 
-Confirmar `Access-Control-Allow-Origin` con el origen Web autorizado. En navegador, abrir la web publicada, filtrar un evento real, activar las capas de lagunas/estaciones y consultar el contexto, las localidades y los contratos. Verificar en Network que las peticiones van al dominio correcto de la API y reciben JSON. No considerar una respuesta HTML de la SPA como respuesta API.
+En navegador, abrir la web publicada, filtrar un evento real, activar las capas de lagunas/estaciones y consultar el contexto, las localidades y los contratos. Verificar en Network que las peticiones permanecen en el mismo dominio bajo `/api/v1/` y reciben JSON. No considerar una respuesta HTML de la SPA como respuesta API.
 
 Cuando una fuente falle, la interfaz debe mostrar la indisponibilidad o un resultado parcial con fechas y advertencias. Un HTTP 503/504 documentado puede demostrar el manejo de falla; no demuestra que esa fuente respondió correctamente. Guardar capturas y resultados fechados de las pruebas remotas.
 
-`npm run verify:live` comprueba la API y el proxy de desarrollo de Vite. Su comprobación final solicita `/api/v1/...` al origen Web; en producción la web actual consulta directamente `VITE_API_URL`. Por eso ese script no es una validación completa de producción. La comprobación de la conexión Web → API publicada se realiza en navegador.
+`npm run verify:live` comprueba la API y el proxy de desarrollo de Vite. La comprobación del enrutamiento Services publicado se realiza además contra el dominio de preview y en el navegador.
 
 ## Límites actuales a considerar
 

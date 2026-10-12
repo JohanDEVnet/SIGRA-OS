@@ -42,7 +42,7 @@ La ecuación del radio fue verificada en el elemento `m:oMath` del Word: `R = 10
 
 ## D08 · Despliegue separado de la preparación
 
-Vite produce la web estática para Vercel. NestJS necesita su propio despliegue, que puede ser un segundo proyecto compatible en Vercel o un host de API independiente. El origen HTTPS de la API se configura mediante `VITE_API_URL`, sin `/api/v1` ni barra final; el cliente añade el prefijo y la ruta. CORS se ajusta al dominio del frontend. La variable se incorpora al build de Vite.
+Vite produce la web estática y NestJS se ejecuta como función dentro del mismo proyecto Vercel Services. El `vercel.json` raíz enruta `/api/*` al servicio `api` y el resto al servicio `web`; por eso `VITE_API_URL` permanece vacío y el cliente usa el mismo dominio. Un origen distinto y CORS quedan como alternativa para un despliegue separado.
 
 No hay credenciales de Vercel o Supabase incorporadas al repositorio. La implementación inicial no crea esos proyectos ni certifica que estén desplegados. La caché de proveedores y los reintentos deberán revisarse frente a los límites del entorno de ejecución seleccionado. Referencias: [Vite en Vercel](https://vercel.com/docs/frameworks/frontend/vite) y [NestJS en Vercel](https://vercel.com/kb/guide/ship-a-nestjs-app-on-vercel).
 

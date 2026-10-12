@@ -28,16 +28,15 @@ En el proyecto Vercel de la API, abrir **Settings > Environment Variables** y ag
 ```text
 SUPABASE_URL=https://tu-project-ref.supabase.co
 SUPABASE_SECRET_KEY=sb_secret_REEMPLAZAR_CON_LA_CLAVE_REAL
-CORS_ORIGINS=https://tu-web.vercel.app
 ```
 
-En el proyecto Vercel de la web agregar:
+En Vercel Services, la web y la API comparten dominio. Dejar vacío:
 
 ```text
-VITE_API_URL=https://tu-api.vercel.app
+VITE_API_URL=
 ```
 
-Después de modificar variables, volver a desplegar ambos proyectos. La URL no lleva `/api/v1` ni una barra al final.
+Después de modificar variables, volver a desplegar el proyecto. `CORS_ORIGINS` solo es necesario si además se autoriza un frontend alojado en otro origen.
 
 ## 4. Archivos locales
 
