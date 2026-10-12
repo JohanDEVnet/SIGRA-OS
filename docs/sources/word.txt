@@ -1,0 +1,212 @@
+
+
+Facultad de Ingeniería
+Carrera Profesional de Ingeniería de Sistemas e Informática
+SIGRA: Sistema Integrado de Gestión de Riesgo Andino
+Avance 2: Inventario, diseño, composición y orquestación de servicios
+Alumno: Walter Arturo, Mendoza Montoya U22220136
+Alumno: Johan Smith, Velasquez Escobar U20232688
+Alumno: Angel Segundo, Cruzado Oscanoa U21221488
+Alumno: Rouss Yanina, Cuellar Fernande U23232897
+Alumno: Martin Augusto, Cervera Saavedra U17201989
+Curso: Arquitectura Orientada a Servicios
+Lima – Perú
+2026
+
+
+
+
+Capítulo 2
+El segundo avance del proyecto SIGRA es abordado en este capítulo. Aquí se describe el inventario de servicios, el diseño de cada uno, la manera en que se componen y se orquestan, así como el estado de la implementación, a partir del problema, las fuentes y la arquitectura preliminar que fueron presentadas en el primer avance. La secuencia se mantiene de acuerdo con la plantilla del curso: inventario de servicios, diseño de servicios, esquema de composición, esquema de orquestación y progresos en la implementación.
+SIGRA conserva su naturaleza académica: agrupa datos públicos para consultar escenarios distritales y no sustituye las alertas ni las evaluaciones oficiales de los organismos encargados. Los valores de diseño que aparecen en este capítulo (tiempos, radios y ponderaciones) son sugerencias del equipo y se modificarán con las pruebas. 
+2.1 Inventario de servicios
+El inventario reúne todos los servicios que intervienen en SIGRA y los separa en dos niveles. En el primero están los servicios externos, publicados por las entidades públicas y sobre los cuales el proyecto no tiene control. En el segundo están los servicios propios, que SIGRA expone a través de una API única y que son los únicos que consume el tablero. Cada servicio recibe un código (EXT para los externos y SIG para los propios) que se usa en el resto del documento.
+2.1.1 Servicios externos
+Se han considerado seis servicios externos. Cinco de ellos aportan datos al análisis (sismos, hidrología, glaciares, población y meteorología) y uno, el de SUNAT, se usa solo como referencia técnica de un contrato SOAP/WSDL, de modo que no interviene en el índice. La Tabla 10 resume el estilo de acceso, el formato y el punto de acceso de cada uno, además del tiempo de vigencia (TTL) propuesto para su caché. 
+
+
+
+
+Algunos puntos de acceso requieren un dato adicional que el adaptador resuelve en tiempo de configuración. En SENAMHI, la capa (typeNames) se obtiene con una consulta GetCapabilities al mismo servicio y se guarda en la configuración. En INAIGEM, {FeatureServer} corresponde a la dirección del servicio ArcGIS del inventario de lagunas glaciares. En PCM/RENIEC, el conjunto de datos poblacional se identifica con la búsqueda de paquetes de CKAN y se toma su recurso en formato CSV. Para todos los servicios de datos se parte del supuesto de acceso sin credenciales, y en SUNAT solo se descarga el descriptor WSDL, sin ejecutar operaciones de facturación.
+2.1.2 Servicios propios
+nuestro proyecto SIGRA muestra nueve servicios bajo el prefijo /api/v1, siguiendo el estilo REST descrito por Fielding (2000) y documentados con OpenAPI 3.1. Se clasifican en tres grupos: los servicios atómicos, cada uno ligado a una sola fuente; el servicio compuesto, que reúne a los anteriores para entregar el panorama distrital; y los servicios de catálogo, de uso técnico.
+
+La clasificación sigue las categorías de capas de servicio de Erl (2005). Los servicios de entidad (SIG-01 a SIG-04) representan datos del dominio del riesgo y se pueden reutilizar de forma independiente. El de utilidad (SIG-05) ofrece una capacidad de apoyo, el contexto meteorológico, que no pertenece a una entidad del dominio. El compuesto (SIG-06) coordina a los demás para resolver una tarea completa. Los servicios de catálogo no alimentan el índice: describen los contratos y ayudan a descubrir los servicios disponibles.
+2.2 Diseño de servicios
+El diseño tiene como objetivo que el tablero obtenga una única respuesta coherente, a pesar de que las fuentes sean diferentes en términos de protocolo, formato y significado. Se emplea un modelo de datos estándar, un adaptador por proveedor, contratos explícitos para los servicios propios y una serie de servicios transversales que respaldan todos los componentes para lograrlo. 
+2.2.1 Estilo arquitectónico y principios de diseño
+el aplicativo SIGRA adopta una arquitectura en capas con mediación explícita: consumo, exposición de servicios, composición y lógica de negocio, mediación y proveedores externos, más un bloque de servicios transversales. En el diseño de cada servicio se aplican los principios de Erl (2008) que más se relacionan con el problema:
+•   	Bajo acoplamiento. El tablero solo conoce la API propia; los proveedores pueden cambiar sin modificar la interfaz.
+•   	Contrato estandarizado y abstracción. Cada ruta tiene un contrato OpenAPI y oculta los detalles de REST, WFS, ArcGIS, CKAN o SOAP.
+•   	Reutilización. Los servicios atómicos se pueden consumir por separado o desde el servicio compuesto.
+•   	Autonomía y ausencia de estado. Cada petición lleva la información necesaria, sin depender de una sesión previa.
+•   	Composición y descubrimiento. El servicio compuesto reúne a los atómicos y el catálogo describe lo disponible.
+2.2.2 Modelo de datos común
+Las fuentes emplean diferentes unidades, fechas y coordenadas para referirse a los mismos conceptos. Es por eso que se establece un modelo canónico, siguiendo los patrones de integración de Hohpe y Woolf (2004): cada adaptador convierte la respuesta de su proveedor al modelo canónico y el resto del sistema opera únicamente con este. Un bloque meta que señala la fuente, el estado (ok, degradado o error), el momento de la consulta y si el dato fue extraído de la caché está presente en todos los registros. De esta manera, el usuario tiene la posibilidad de conocer en todo momento el origen y la antigüedad de lo que está viendo. 
+
+Las reglas de normalización son cuatro: las coordenadas se expresan en WGS84 decimal (lat, lon); las unidades se unifican en kilómetros, milímetros y grados Celsius; el ubigeo se guarda como texto de seis dígitos, conservando los ceros iniciales; y las fechas se almacenan en UTC. Esta última regla evita errores al comparar la hora de un sismo con la de otras fuentes.
+2.2.3 Adaptadores por proveedor
+Cada proveedor tiene su propio adaptador, que concentra todo lo que depende de ese servicio: la forma de consultarlo, la lectura de la respuesta, la validación de campos obligatorios y la conversión al modelo común. Si un proveedor cambia su formato, solo se modifica su adaptador. La Tabla 13 resume el tratamiento previsto en cada caso.
+
+2.2.4 Contratos de los servicios propios
+Cada servicio propio define sus parámetros de entrada, la estructura de su respuesta y los códigos de error posibles. Esto permite que el tablero, o cualquier otro consumidor, use el servicio sin conocer cómo se obtienen los datos.
+
+Los códigos de error siguen una convención única en todas las rutas:
+•   	400: parámetro inválido o ausente.
+•   	404: el ubigeo consultado no existe en el recurso poblacional.
+•   	422: parámetro fuera de rango, por ejemplo un radio negativo.
+•   	429: se superó el límite de solicitudes.
+•   	502: el proveedor respondió con un formato inválido.
+•   	503: el proveedor no está disponible.
+•   	504: se agotó el tiempo de espera.
+2.2.5 Servicios transversales
+Hay cuatro funciones que no pertenecen a una sola capa y se diseñan como servicios transversales.
+Caché con vigencia diferenciada. Cada fuente conserva sus datos en memoria durante un TTL propio: 5 minutos para sismos, 15 para hidrología, 30 para meteorología, 1 día para lagunas y 7 días para población. Los datos que cambian con rapidez se revisan con más frecuencia y los recursos estables se reutilizan por más tiempo, lo que además reduce la carga sobre los proveedores.
+Resiliencia del cliente. Cada consulta externa tiene un tiempo límite de 25 segundos y hasta dos reintentos con retroceso exponencial (1 y 2 segundos). Estas medidas se apoyan en los patrones de estabilidad descritos por Nygard (2018), en particular el uso de tiempos de espera para que una falla externa no bloquee todo el sistema.
+Degradación elegante. Si un proveedor no responde, el sistema usa el último dato bueno de la caché, lo marca con su fecha y con estado degradado. Si no hay ningún dato disponible, la fuente se marca con estado error y la respuesta informa qué falta. Es preferible entregar un resultado parcial y claramente señalado que detener toda la consulta por la falla de un único proveedor.
+Seguridad. La API valida los parámetros con Pydantic, restringe los orígenes permitidos con CORS mediante una lista blanca, admite una API Key opcional en la cabecera X-API-Key y limita a 60 las solicitudes por minuto por cliente.
+
+2.3 Esquema de composición de servicios
+La composición es lo que convierte a cinco servicios independientes en una respuesta útil para el analista. El servicio compuesto SIG-06 (/api/v1/riesgo/panorama) reúne a los servicios atómicos SIG-01 a SIG-05, relaciona sus datos por ubicación y calcula un índice orientativo por distrito. Los servicios de catálogo y SUNAT no participan. 
+La capa de composición tiene tres componentes: el orquestador, que coordina las consultas y se describe en la sección 2.4, la correlación geoespacial, que decide qué registros pertenecen a la zona del evento y el motor del índice que combinan los factores en un valor único.
+
+
+
+
+
+2.3.1 Correlación geoespacial
+A partir del epicentro del sismo se define un radio de influencia que crece con la magnitud. El APF1 anticipaba que esta regla se definiría durante el diseño se propone la siguiente ecuación:
+
+Con esta regla un sismo de magnitud 5,0 produce un radio de unos 16 km, uno de magnitud 6,0 de unos 40 km y uno de magnitud 7,0 de unos 100 km. Dentro de ese radio se buscan las lagunas glaciares y las estaciones hidrológicas. La distancia entre el epicentro y cada punto se calcula con la fórmula de Haversine, que considera la curvatura de la Tierra:
+
+
+El distrito de análisis es el que contiene al epicentro o, si no se puede determinar, el más cercano. Su ubigeo permite consultar el recurso poblacional. La cercanía se usa únicamente como criterio de consulta: no se presenta como prueba de daños ni de inestabilidad de una laguna.
+2.3.2 Índice multiamenaza
+El índice es una norma heurística que se usa para clasificar la información en el aplicativo. No es un modelo oficial de predicción ni tiene validación estadística en relación con daños del pasado. Integra cinco elementos, todos normalizados en una escala de 0 a 100 y multiplicados por un peso. El elemento más importante es el sísmico, ya que este es el que da comienzo a la consulta; después está el poblacional, que indica la exposición de los individuos; y los demás ofrecen información contextual sobre la región. 
+
+El índice final es la suma de cada puntaje multiplicado por su peso, y se clasifica en cuatro niveles: Bajo (0 a 24), Moderado (25 a 49), Alto (50 a 74) y Muy alto (75 a 100). La profundidad del sismo reduce el aporte del factor sísmico porque los eventos profundos suelen sentirse con menor intensidad en superficie, la escala logarítmica de población evita que un distrito muy grande domine el resultado.
+2.3.3 Reglas ante datos faltantes
+Como las fuentes pueden fallar, el índice incluye reglas explícitas para no presentar como completo un resultado que no lo es:
+1.	Si falta el factor sísmico (F1), el índice no se calcula, porque sin evento no hay consulta.
+2.	Si falta un solo factor distinto de F1, el índice se recalcula repartiendo su peso proporcionalmente entre los demás y se marca como parcial, con una advertencia visible.
+3.	Si faltan dos o más factores, el índice no se calcula y se muestran solo los datos disponibles.
+4.	Los datos tomados de la caché por falla de un proveedor se señalan con su fecha y no se consideran comparables con una respuesta completa.
+2.3.4 Estructura de la respuesta
+La respuesta del servicio compuesto agrupa el evento, el distrito, los factores, el índice y el estado de cada fuente. De esta forma el tablero puede mostrar no solo el resultado sino también su procedencia y sus advertencias. 
+2.4 Esquema de orquestación de servicios
+La orquestación establece el orden y los términos bajo los cuales se invocan los servicios para generar la respuesta compuesta. SIGRA opera con una orquestación centralizada, es decir, un solo orquestador regula el flujo, determina qué se consulta en paralelo, aplica las normas de fallo y elabora la respuesta. Se optó por esta perspectiva, en lugar de una coreografía entre servicios, ya que el tablero requiere recibir una respuesta integrada y porque un punto central permite aplicar las normas sobre datos faltantes y registrar la procedencia. El orquestador se ejecuta en Python utilizando asyncio, lo que posibilita la ejecución simultánea de múltiples consultas externas. 
+
+
+2.4.1 Fases de la orquestación
+Fase 1: consulta concurrente. El orquestador obtiene primero el sismo seleccionado a través del adaptador del IGP, porque de él depende el resto de la consulta. Luego lanza en paralelo las consultas a SENAMHI, INAIGEM, PCM/RENIEC y Open Meteo. Cada adaptador revisa primero la caché, solo si no hay un dato vigente consulta al proveedor, con tiempo límite de 25 segundos y hasta dos reintentos.
+Fase 2: correlación. Con las respuestas ya normalizadas, el orquestador calcula el radio de influencia, filtra las lagunas y estaciones que caen dentro de él mediante la distancia de Haversine y determina el ubigeo del distrito de análisis.
+Fase 3: enriquecimiento y cálculo. Se incorporan la población del ubigeo y la meteorología del epicentro, se calculan los cinco factores, se aplican las reglas de datos faltantes y se construye la respuesta con la lista de fuentes consultadas, su estado, la fecha de cada dato y las advertencias.
+2.4.2 Manejo de excepciones
+
+2.5 Avances de implementación
+Al cierre de este avance, el proyecto cuenta con el diseño y la especificación detallados de los servicios, los adaptadores, el orquestador y el tablero. Esta sección describe cómo se comunicará cada componente con las fuentes de datos, cómo será la interfaz y cómo se organizará la implementación de los servicios. Las evidencias de ejecución, como capturas y respuestas reales, se incorporarán a medida que cada componente se pruebe.
+2.5.1 Comunicación con las fuentes de datos
+Todos los adaptadores usan un cliente HTTP asíncrono con tiempo límite de 25 segundos, reintentos con retroceso y registro de cada llamada (fuente, duración y estado). Antes de integrar cada fuente se guardará una respuesta de referencia que permita distinguir los datos reales de los ejemplos de diseño. 
+
+2.5.2 Implementación de los servicios
+La implementación se organizará en un proyecto Python con FastAPI, separando el modelo de datos, los adaptadores, los servicios de negocio y las rutas. 
+
+
+2.5.3 Conclusión del avance
+Con este avance se han definido los inventarios de servicios, sus contratos, el modelo de datos común, la composición y la orquestación, junto con las reglas del índice y del manejo de fallas que en el primer avance no se habia realizado. El siguiente paso es implementar los adaptadores y los servicios, y documentar con evidencia real las consultas a cada fuente.
+Referencias
+Erl, T. (2005). Service-oriented architecture: Concepts, technology, and design. Prentice Hall.
+Erl, T. (2008). SOA: Principles of service design. Prentice Hall.
+Fielding, R. T. (2000). Architectural styles and the design of network-based software architectures [Tesis doctoral, University of California, Irvine].
+Hohpe, G., & Woolf, B. (2004). Enterprise integration patterns: Designing, building, and deploying messaging solutions. Addison-Wesley.
+Nygard, M. T. (2018). Release it! Design and deploy production-ready software (2.ª ed.). Pragmatic Bookshelf.
+Open Geospatial Consortium. (2010). OpenGIS Web Feature Service 2.0 interface standard (OGC 09-025r1).
+World Wide Web Consortium. (2001). Web Services Description Language (WSDL) 1.1. https://www.w3.org/TR/wsdl
+
+Cód. | Proveedor y servicio | Estilo y formato | Punto de acceso | TTL
+EXT-01 | IGP
+Últimos sismos | REST
+JSON | GET https://ultimosismo.igp.gob.pe/api/ultimo-sismo/ajaxb/{año} | 300 s
+EXT-02 | SENAMHI
+IDESEP, estaciones hidrológicas | OGC WFS
+GML / GeoJSON | GET https://idesep.senamhi.gob.pe/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames={capa}&outputFormat=application/json&count=500 | 900 s
+EXT-03 | INAIGEM
+Lagunas glaciares (LGRD2024) | ArcGIS REST
+JSON | GET {FeatureServer}/0/query?where=1=1&outFields=*&f=json&resultRecordCount=1000 | 86 400 s
+EXT-04 | PCM/RENIEC
+Población por ubigeo (CKAN) | REST
+JSON y CSV | GET https://www.datosabiertos.gob.pe/api/3/action/package_show?id={dataset} | 604 800 s
+EXT-05 | Open-Meteo
+Clima actual | REST
+JSON | GET https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=temperature_2m,precipitation,wind_speed_10m&timezone=America/Lima | 1 800 s
+EXT-06 | SUNAT
+billService (solo WSDL) | SOAP 1.1
+XML / WSDL 1.1 | GET https://e-beta.sunat.gob.pe/ol-ti-itcpfegem-beta/billService?wsdl | No aplica
+Cód. | Tipo | Ruta | Fuente | Finalidad
+SIG-01 | Atómico (entidad) | /api/v1/sismos | IGP | Entregar sismos en el modelo común
+SIG-02 | Atómico (entidad) | /api/v1/hidrologia/estaciones | SENAMHI | Entregar estaciones hidrológicas
+SIG-03 | Atómico (entidad) | /api/v1/glaciares/lagunas | INAIGEM | Entregar lagunas glaciares
+SIG-04 | Atómico (entidad) | /api/v1/poblacion/{ubigeo} | PCM/RENIEC | Entregar la población de un distrito
+SIG-05 | Atómico (utilidad) | /api/v1/meteorologia/actual | Open-Meteo | Entregar la condición meteorológica puntual
+SIG-06 | Compuesto (tarea) | /api/v1/riesgo/panorama | SIG-01 a SIG-05 | Relacionar los datos y calcular el índice orientativo
+SIG-07 | Catálogo | /api/v1/catalogo/servicios | Inventario interno | Describir proveedores, formatos y condiciones
+SIG-08 | Catálogo | /api/v1/catalogo/contrato-soap | SUNAT | Mostrar el análisis del WSDL
+SIG-09 | Catálogo | /api/v1/catalogo/contrato-wfs | SENAMHI | Mostrar el análisis del GetCapabilities WFS
+Entidad | Campos
+meta | fuente, fecha_dato (ISO 8601), obtenido_en, estado (ok / degradado / error), desde_cache (verdadero o falso)
+Sismo | id, fecha_utc, lat, lon, magnitud, profundidad_km, referencia
+Laguna | id, nombre, lat, lon, ubigeo, nivel_exposicion
+Estacion | codigo, nombre, lat, lon, ubigeo, estado_reportado
+Poblacion | ubigeo, distrito, provincia, departamento, habitantes, fecha_corte
+Meteo | lat, lon, temperatura_c, precipitacion_mm, viento_kmh, hora_local
+Adaptador | Protocolo | Tratamiento | Tecnología
+IGP | REST / JSON | Mapea fecha, coordenadas, magnitud y profundidad; valida rangos de latitud, longitud y magnitud. | httpx, Pydantic
+SENAMHI | WFS | Solicita GeoJSON y, si no está disponible, interpreta GML 3.2; extrae coordenadas y estado de cada estación. | httpx, ElementTree
+INAIGEM | ArcGIS REST | Lee features[].attributes y geometry; reproyecta a WGS84 cuando es necesario. | httpx, Pydantic
+PCM/RENIEC | CKAN y CSV | Localiza el recurso CSV en package_show, lo lee, normaliza el ubigeo y registra la fecha de corte. | httpx, csv
+Open-Meteo | REST / JSON | Convierte el bloque current al modelo Meteo. | httpx, Pydantic
+SUNAT | SOAP / WSDL | Descarga el WSDL y extrae operaciones y enlaces para el catálogo, sin invocar operaciones. | httpx, ElementTree
+Ruta | Parámetros | Respuesta (200) | Errores
+/sismos | anio (año actual por defecto), mag_min (4,0), dias (7) | Lista de Sismo y meta | 400, 422, 502, 503, 504
+/hidrologia/estaciones | lat, lon, radio_km (50) | Lista de Estacion y meta | 400, 422, 502, 503, 504
+/glaciares/lagunas | lat, lon, radio_km (50) | Lista de Laguna y meta | 400, 422, 502, 503, 504
+/poblacion/{ubigeo} | ubigeo de 6 dígitos | Poblacion y meta | 400, 404, 502, 503, 504
+/meteorologia/actual | lat, lon | Meteo y meta | 400, 422, 502, 503, 504
+/riesgo/panorama | evento_id (opcional), mag_min, dias, radio_km (opcional) | Evento, factores, índice, nivel, fuentes y advertencias | 400, 422, 429, 502, 503, 504
+/catalogo/servicios | Ninguno | Proveedores, formato, TTL y condiciones | 500
+/catalogo/contrato-soap | Ninguno | Operaciones y enlaces del WSDL | 502, 504
+/catalogo/contrato-wfs | Ninguno | Operaciones, capas, versiones y formatos | 502, 504
+Factor | Peso | Cálculo del puntaje (0 a 100) | Origen
+F1 Sísmico | 30 % | ((M − 3) / 4) × 100, con tope de 100, multiplicado por un coeficiente de profundidad: 1,0 si es menor de 60 km; 0,7 entre 60 y 300 km; 0,4 si es mayor de 300 km | IGP
+F2 Glaciar | 20 % | 25 × número de lagunas dentro de R, con tope de 100 | INAIGEM
+F3 Hidrológico | 15 % | 20 × número de estaciones dentro de R, con tope de 100 | SENAMHI
+F4 Poblacional | 25 % | 100 × log10(habitantes) / 6, con tope de 100 | PCM/RENIEC
+F5 Meteorológico | 10 % | 10 × precipitación actual en mm, con tope de 100 | Open-Meteo
+Factor | Dato hipotético | Puntaje | Peso | Aporte
+F1 Sísmico | M 6,0; profundidad 35 km | 75,0 | 30 % | 22,5
+F2 Glaciar | 2 lagunas | 50,0 | 20 % | 10,0
+F3 Hidrológico | 3 estaciones | 60,0 | 15 % | 9,0
+F4 Poblacional | 45 000 habitantes | 77,6 | 25 % | 19,4
+F5 Meteorológico | 2 mm | 20,0 | 10 % | 2,0
+Índice |   |   | 100 % | 62,9 (Alto)
+Situación | Comportamiento
+Falla el IGP (sin evento) | No se puede iniciar el análisis: la API responde 503 con un mensaje claro.
+Falla un proveedor distinto del IGP | Respuesta 200 con índice parcial, advertencia visible y, si existe, el último dato de la caché con su fecha.
+Fallan dos o más proveedores | El índice no se calcula; se entregan los datos disponibles con sus advertencias.
+Dato en caché vencido por falla externa | Se muestra con su fecha y con estado degradado.
+Respuesta con formato inesperado | El adaptador la rechaza (502) y el orquestador la trata como fuente no disponible.
+Fuente | Consulta | Parámetros clave | Tratamiento
+IGP | GET, JSON | {año} en la ruta | Filtra por magnitud mínima y días; convierte a Sismo.
+SENAMHI | GET, WFS 2.0.0 | service, version, request, typeNames, outputFormat, count | Pide GeoJSON o interpreta GML; convierte a Estacion.
+INAIGEM | GET, ArcGIS REST | where, outFields, f=json, resultRecordCount | Convierte attributes y geometry a Laguna; reproyecta si hace falta.
+PCM/RENIEC | GET, CKAN y luego CSV | id del conjunto de datos | Lee el CSV, normaliza el ubigeo a 6 dígitos y registra la fecha de corte.
+Open-Meteo | GET, JSON | latitude, longitude, current, timezone | Convierte el bloque current a Meteo.
+SUNAT | GET del WSDL | ?wsdl | Lista operaciones y enlaces para el catálogo, sin invocar operaciones.
+Componente | Especificación | Estado
+Modelo de datos común | Clases Pydantic de la sección 2.2.2 | Especificado
+Adaptadores (6) | Un módulo por proveedor, según la sección 2.5.1 | Especificado
+Servicios atómicos SIG-01 a SIG-05 | Parámetros, respuestas y errores de la sección 2.2.4 | Especificado
+Servicio compuesto SIG-06 | Orquestación en tres fases e índice de las secciones 2.3 y 2.4 | Especificado
+Servicios de catálogo SIG-07 a SIG-09 | Inventario y análisis de WSDL y WFS | Especificado
+Servicios transversales | Caché con TTL, reintentos, degradación, CORS y límite de solicitudes | Especificado
+Tablero web | Maqueta de la sección 2.5.2 | Diseñado

@@ -1,0 +1,31 @@
+.risk-cluster-wrap { border:0; background:transparent; }
+.risk-cluster { display:flex; width:100%; height:100%; align-items:center; justify-content:center; border-radius:50%; border:2px solid #f7f7f0; box-shadow:0 0 0 4px #6d855d20,0 3px 8px #183e341b; color:#f7f7f0; background:#6d855d; }
+.risk-cluster strong { font-family:'DM Sans',sans-serif; font-size:13px; font-weight:650; line-height:1; }
+.risk-cluster-quakes { background:#6d855d; }
+.risk-cluster-lakes { background:#719ba5; box-shadow:0 0 0 4px #719ba520,0 3px 8px #183e341b; }
+.risk-cluster-stations { background:#9a8a61; box-shadow:0 0 0 4px #9a8a6120,0 3px 8px #183e341b; }
+.risk-cluster.is-selected { background:#183e34; box-shadow:0 0 0 5px #183e3426,0 4px 10px #183e3426; }
+.risk-cluster-quakes.has-strong { background:#bb704c; box-shadow:0 0 0 4px #bb704c26,0 3px 8px #183e341b; }
+.risk-cluster-quakes.has-strong.is-selected { box-shadow:0 0 0 5px #183e3436,0 4px 10px #183e3426; }
+.risk-cluster:hover { filter:brightness(1.06); }
+.risk-cluster-wrap:focus-visible,.quake-marker-wrap:focus-visible,.inventory-marker-wrap:focus-visible { outline:3px solid #6d855d; outline-offset:5px; border-radius:50%; }
+.risk-overlap { min-width:220px; max-width:280px; color:#183e34; font-family:'DM Sans',sans-serif; }
+.risk-overlap > strong { display:block; font-size:14px; font-weight:600; }
+.risk-overlap > p { font-size:12px; line-height:1.65; color:#7c8b70; margin:9px 0 12px!important; }
+.risk-overlap-list { max-height:210px; overflow-y:auto; border-top:1px solid #dfe6d6; padding-top:5px; }
+.risk-overlap-list button { width:100%; border:0; border-bottom:1px solid #e7ecdf; background:transparent; text-align:left; color:#6d855d; font-family:inherit; font-size:12px; line-height:1.7; padding:9px 3px; cursor:pointer; }
+.risk-overlap-list button:hover { color:#183e34; background:#eff3e7; }
+.risk-overlap-list button:last-child { border-bottom:0; }
+.risk-overlap-list button:focus-visible { outline:2px solid #8da676; outline-offset:-2px; background:#eff3e7; }
+.public-map .quake-marker.marker-light { background:#dce6cb; color:#657d51; border-color:#a9bc8f; box-shadow:0 0 0 4px #9cae7c16; }
+.public-map .quake-marker.marker-medium { background:#7f9667; color:#f7f7f0; border-color:#6d855d; box-shadow:0 0 0 4px #6d855d1b; }
+.public-map .quake-marker.marker-strong { background:#bb704c; color:#f7f7f0; border-color:#a56344; box-shadow:0 0 0 4px #bb704c24; }
+.public-map .quake-marker.selected { background:#183e34; color:#f7f7f0; border-color:#f7f7f0; box-shadow:0 0 0 5px #183e342c,0 3px 8px #183e3426; }
+.public-map .quake-marker.marker-strong.selected { background:#bb704c; box-shadow:0 0 0 5px #183e3436,0 3px 8px #183e3426; }
+.public-map .inventory-marker.lakes,.map-layer-control .layer-dot.lakes { background:#719ba5; }
+.public-map .inventory-marker.stations,.map-layer-control .layer-dot.stations { background:#9a8a61; }
+.risk-locality-marker { filter:drop-shadow(0 1px 3px #183e3430); }
+.risk-cluster-lakes.is-selected { background:#719ba5; box-shadow:0 0 0 5px #183e3430,0 3px 8px #183e3426; }
+.risk-cluster-stations.is-selected { background:#9a8a61; box-shadow:0 0 0 5px #183e3430,0 3px 8px #183e3426; }
+.public-map .inventory-marker.selected { width:16px; height:16px; border:2px solid #f7f7f0; box-shadow:0 0 0 3px #183e34,0 0 0 6px #183e341c,0 3px 8px #183e3426; }
+.inventory-selected-wrap:focus-visible { outline-offset:7px; }

@@ -1,0 +1,21 @@
+{
+  "name": "sigra",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run build --workspace @sigra/domain && concurrently -n WEB,API -c green,cyan \"npm run dev --workspace @sigra/web\" \"npm run dev --workspace @sigra/api\"",
+    "build": "npm run build --workspace @sigra/domain && npm run build --workspace @sigra/web && npm run build --workspace @sigra/api",
+    "test": "npm run build --workspace @sigra/domain && node --test packages/domain/tests/*.test.mjs && npm run test --workspace @sigra/api && node --import tsx --test apps/web/tests/*.test.ts",
+    "verify:live": "node apps/api/scripts/verify-live.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

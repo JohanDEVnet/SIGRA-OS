@@ -1,0 +1,12 @@
+{
+  "framework": "vite",
+  "installCommand": "npm install --prefix ../..",
+  "buildCommand": "npm run build --prefix ../.. --workspace @sigra/web",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/((?!assets/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

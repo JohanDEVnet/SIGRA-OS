@@ -1,0 +1,68 @@
+PAGE 1
+CURSO/MATERIA: ARQUITECTURA ORIENTADA A SERVICIOS. Página: 1/2 
+Docente: MBA Mg. Ing. Rene Alonso Nieto Valencia. Avance 02. 
+ 
+ 
+  
+ 
+ 
+ 
+ 
+FACULTAD DE INGENIERÍA. 
+ 
+CARRERA PROFESIONAL DE INGENIERÍA DE SISTEMAS E 
+INFORMÁTICA. 
+ 
+LINEAMIENTOS PARA PRESENTAR EL AVANCE TRABAJO FINAL 02. 
+ 
+El trabajo consta en desarrollar una solución tecnológica para definir e 
+implementar los procesos de en una entidad empresarial, o de un producto o 
+servicio en  una ENTIDAD EMPRESARIAL , donde se detalle : Inicio del Proyecto, 
+Planificación, Ejecución, Supervisión & Control  y C ierre del Proyecto , de 
+acuerdo al formato del informe final que ha entregado el docente, a continuación, 
+se detalla las siguientes precisiones: 
+ 
+1. Fecha de Entrega: martes 15 de octubre (Impostergable, respetar la fecha de 
+entrega). 
+2. Hora: 13:00 horas (respetar la hora límite de entrega). 
+3. Conformar grupos de exposición de máximo 03 integrantes , este grupo 
+formado estará hasta la presentación de  la documentación indicada por el 
+docente y los lineamientos 
+4. Presentar y e ntregar documentos en formato PDF , por UTP+CLASS por el 
+enlace indicado  por el docente  según corresponda, ojo solo hay un intento  
+para subir el documento. 
+5. Solo un integrante  del grupo deberá presentar el informe en la plataforma 
+académica, ojo solo hay un intento para cargar el documento  completo y sus 
+anexos. 
+6. Para esta entrega se presentan de acuerdo a 40 SERVICIOS EMPRESARIALES, 
+de acuerdo al formato siguiente: 
+a. Formato de Informe Trabajo Final (PDF). 
+b. Manual de instalación y configuración (PDF). 
+c. Material audiovisual de apoyo. 
+ 
+7. La calificación es grupal e individual , todos los integrantes  participan de 
+forma obligatoria, en el trabajo. 
+8. Cada grupo tendrá igual tiempo de exposición , se exige RESPETAR el tiempo 
+asignado, en caso de exceder el tiempo de exposición se cortará la intervención 
+del grupo para respetar el tiempo de los demás grupos. 
+9. NO se va aceptar que 2 o más grupos tengan empresas iguales o repetidas. 
+10. NO se van aceptar copias y plagios del trabajo. 
+11. Calificación de acuerdo a  EVALUACIÓN DEL DOCENTE , s e va calificar 
+contenido y detalle  de l os contenidos claros y precisos del formato para la  
+empresa analizada y estudiada , exposición grupal, exposición individual , uso 
+
+PAGE 2
+CURSO/MATERIA: ARQUITECTURA ORIENTADA A SERVICIOS. Página: 2/2 
+Docente: MBA Mg. Ing. Rene Alonso Nieto Valencia. Avance 02. 
+ 
+ 
+  
+ 
+de mapas conceptuales, cuadros didácticos, imágenes, Mock Up, prototipos , 
+esquemas de planificación, esquemas de requerimientos, diagramas de 
+procesos, de clases, de entidad relación, diseño del sistema, diseño del código 
+fuente, organización de los servicios; y otras herramientas que se considere de 
+tal manera que la presentación y exposición sea dinámica ; respetando el 
+formato asignado. 
+12.  
+ 

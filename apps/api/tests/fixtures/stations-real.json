@@ -1,0 +1,6750 @@
+{
+  "obtainedAt": "2026-10-12T01:41:01.9488575Z",
+  "sourceUrl": "https://idesep.senamhi.gob.pe/geoserver/ows?service=WFS&version=2.0.0&request=GetFeature&typeNames=g_99_01:99_01_002_03_001_000_0000_00_00&outputFormat=application/json&srsName=EPSG:4326&count=500&startIndex=0",
+  "response": {
+    "type": "FeatureCollection",
+    "totalFeatures": 259,
+    "features": [
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.1",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.1145,
+            -16.427
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204504",
+          "cod_base": "204504",
+          "estacion": "OCOÑA",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "CAMANA",
+          "distrito": "OCOÑA",
+          "entidad": "SEN",
+          "longitud": -73.1145,
+          "altitud": 23,
+          "latitud": -16.427,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.2",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.45705,
+            -15.48929
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204604",
+          "cod_base": "204604",
+          "estacion": "PUENTE COLGANTE-SIBAYO",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "CAYLLOMA",
+          "distrito": "SIBAYO",
+          "entidad": "SEN",
+          "longitud": -71.45705,
+          "altitud": 3810,
+          "latitud": -15.48929,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.3",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.11313,
+            -7.46354
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220201",
+          "cod_base": "220201",
+          "estacion": "PUENTE CRISNEJAS",
+          "categoria": "06",
+          "departamento": "CAJAMARCA",
+          "provincia": "CAJABAMBA",
+          "distrito": "CONDEBAMBA",
+          "entidad": "SEN",
+          "longitud": -78.11313,
+          "altitud": 1988,
+          "latitud": -7.46354,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.4",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.23694,
+            -3.72722
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240102",
+          "cod_base": "240101",
+          "estacion": "ENAPU PERU",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "BELEN",
+          "entidad": "SEN",
+          "longitud": -73.23694,
+          "altitud": 126,
+          "latitud": -3.72722,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.5",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.29472,
+            -7.24262
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220206",
+          "cod_base": "220206",
+          "estacion": "NAMORA BOCATOMA",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "CAJAMARCA",
+          "distrito": "JESUS",
+          "entidad": "SEN",
+          "longitud": -78.29472,
+          "altitud": 2612,
+          "latitud": -7.24262,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.6",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.68973,
+            -11.92985
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47278214",
+          "cod_base": "4721D2A6",
+          "estacion": "CHOSICA",
+          "categoria": "22",
+          "departamento": "LIMA",
+          "provincia": "LIMA",
+          "distrito": "LURIGANCHO",
+          "entidad": "SEN",
+          "longitud": -76.68973,
+          "altitud": 867,
+          "latitud": -11.92985,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.7",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.00207,
+            -9.29601
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47270400",
+          "cod_base": "47270400",
+          "estacion": "TINGO MARIA",
+          "categoria": "22",
+          "departamento": "HUANUCO",
+          "provincia": "LEONCIO PRADO",
+          "distrito": "RUPA-RUPA",
+          "entidad": "SEN",
+          "longitud": -76.00207,
+          "altitud": 646,
+          "latitud": -9.29601,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.8",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.87381,
+            -15.25544
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47251282",
+          "cod_base": "4722252C",
+          "estacion": "PUENTE CARRETERA",
+          "categoria": "18",
+          "departamento": "PUNO",
+          "provincia": "HUANCANE",
+          "distrito": "HUANCANE",
+          "entidad": "SEN",
+          "longitud": -69.87381,
+          "altitud": 3812,
+          "latitud": -15.25544,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.9",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.26172,
+            -8.65793
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "211408",
+          "cod_base": "211408",
+          "estacion": "CONDORCERRO PSI",
+          "categoria": "18",
+          "departamento": "ANCASH",
+          "provincia": "SANTA",
+          "distrito": "CHIMBOTE",
+          "entidad": "PSI1",
+          "longitud": -78.26172,
+          "altitud": 475,
+          "latitud": -8.65793,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.10",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.54263,
+            -17.47659
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "214800",
+          "cod_base": "214800",
+          "estacion": "TICAPAMPA PSI",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "JORGE BASADRE",
+          "distrito": "ILABAYA",
+          "entidad": "ANA",
+          "longitud": -70.54263,
+          "altitud": 1093,
+          "latitud": -17.47659,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.11",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.67503,
+            -16.42679
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204707",
+          "cod_base": "204708",
+          "estacion": "PUENTE DEL DIABLO",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "SOCABAYA",
+          "entidad": "SEN",
+          "longitud": -71.67503,
+          "altitud": 1983,
+          "latitud": -16.42679,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.12",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.30938,
+            -9.9222
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221811",
+          "cod_base": "221813",
+          "estacion": "PUENTE HIGUERAS",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "HUANUCO",
+          "distrito": "HUANUCO",
+          "entidad": "SEN",
+          "longitud": -76.30938,
+          "altitud": 2006,
+          "latitud": -9.9222,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.13",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.89441,
+            -12.01281
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202910",
+          "cod_base": "202913",
+          "estacion": "PUENTE HUACHIPA",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "LIMA",
+          "distrito": "LURIGANCHO",
+          "entidad": "SEN",
+          "longitud": -76.89441,
+          "altitud": 395,
+          "latitud": -12.01281,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.14",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.575,
+            -13.56222
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230503",
+          "cod_base": "230503",
+          "estacion": "PUENTE CUNYAC",
+          "categoria": "05",
+          "departamento": "CUSCO",
+          "provincia": "ANTA",
+          "distrito": "MOLLEPATA",
+          "entidad": "SEN",
+          "longitud": -72.575,
+          "altitud": 2345,
+          "latitud": -13.56222,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.15",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.62217,
+            -11.45293
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202802",
+          "cod_base": "202802",
+          "estacion": "OBRAJILLO",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "CANTA",
+          "distrito": "CANTA",
+          "entidad": "SEN",
+          "longitud": -76.62217,
+          "altitud": 2706,
+          "latitud": -11.45293,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.16",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.95028,
+            -9.36694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "231101",
+          "cod_base": "231101",
+          "estacion": "PUERTO INCA",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "PUERTO INCA",
+          "distrito": "PUERTO INCA",
+          "entidad": "SEN",
+          "longitud": -74.95028,
+          "altitud": 215,
+          "latitud": -9.36694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.17",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.08361,
+            -3.51694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240202",
+          "cod_base": "240202",
+          "estacion": "TIMICURILLO",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "INDIANA",
+          "entidad": "SEN",
+          "longitud": -73.08361,
+          "altitud": 105,
+          "latitud": -3.51694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.18",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.28779,
+            -5.32221
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220812",
+          "cod_base": "220813",
+          "estacion": "TABACONAS",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "SAN IGNACIO",
+          "distrito": "TABACONAS",
+          "entidad": "SEN",
+          "longitud": -79.28779,
+          "altitud": 1787,
+          "latitud": -5.32221,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.19",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.00207,
+            -9.29601
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221820",
+          "cod_base": "221822",
+          "estacion": "TINGO MARIA",
+          "categoria": "05",
+          "departamento": "HUANUCO",
+          "provincia": "LEONCIO PRADO",
+          "distrito": "RUPA-RUPA",
+          "entidad": "SEN",
+          "longitud": -76.00207,
+          "altitud": 646,
+          "latitud": -9.29601,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.20",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.50449,
+            -9.03738
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "231201",
+          "cod_base": "231202",
+          "estacion": "PUENTE AGUAYTIA",
+          "categoria": "05",
+          "departamento": "UCAYALI",
+          "provincia": "PADRE ABAD",
+          "distrito": "PADRE ABAD",
+          "entidad": "SEN",
+          "longitud": -75.50449,
+          "altitud": 278,
+          "latitud": -9.03738,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.21",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.46697,
+            -6.37317
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "200801",
+          "cod_base": "200802",
+          "estacion": "PUCHACA",
+          "categoria": "05",
+          "departamento": "LAMBAYEQUE",
+          "provincia": "FERREÑAFE",
+          "distrito": "INCAHUASI",
+          "entidad": "SEN",
+          "longitud": -79.46697,
+          "altitud": 345,
+          "latitud": -6.37317,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.22",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.71956,
+            -13.64014
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203601",
+          "cod_base": "203602",
+          "estacion": "LETRAYOC",
+          "categoria": "05",
+          "departamento": "ICA",
+          "provincia": "PISCO",
+          "distrito": "HUANCANO",
+          "entidad": "SEN",
+          "longitud": -75.71956,
+          "altitud": 756,
+          "latitud": -13.64014,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.23",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.35017,
+            -11.57046
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202902",
+          "cod_base": "202902",
+          "estacion": "MILLOC",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "CARAMPOMA",
+          "entidad": "SEN",
+          "longitud": -76.35017,
+          "altitud": 4391,
+          "latitud": -11.57046,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.24",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.05479,
+            -12.86096
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203303",
+          "cod_base": "203303",
+          "estacion": "PACARAN",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "CAÑETE",
+          "distrito": "PACARAN",
+          "entidad": "SEN",
+          "longitud": -76.05479,
+          "altitud": 688,
+          "latitud": -12.86096,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.25",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.83083,
+            -10.94944
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230930",
+          "cod_base": "230938",
+          "estacion": "PERENE",
+          "categoria": "05",
+          "departamento": "JUNIN",
+          "provincia": "CHANCHAMAYO",
+          "distrito": "PICHANAQUI",
+          "entidad": "SEN",
+          "longitud": -74.83083,
+          "altitud": 500,
+          "latitud": -10.94944,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.26",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.7367,
+            -10.92164
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202607",
+          "cod_base": "202607",
+          "estacion": "PICOY",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "HUAURA",
+          "distrito": "SANTA LEONOR",
+          "entidad": "SEN",
+          "longitud": -76.7367,
+          "altitud": 2903,
+          "latitud": -10.92164,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.27",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.28333,
+            -3.43333
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240103",
+          "cod_base": "240102",
+          "estacion": "TAMSHIYACU",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "LAS AMAZONAS",
+          "entidad": "SEN",
+          "longitud": -73.28333,
+          "altitud": 105,
+          "latitud": -3.43333,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.28",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.50244,
+            -11.39315
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202801",
+          "cod_base": "202801",
+          "estacion": "PARIACANCHA",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "CANTA",
+          "distrito": "HUAROS",
+          "entidad": "SEN",
+          "longitud": -76.50244,
+          "altitud": 3842,
+          "latitud": -11.39315,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.29",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.57431,
+            -16.45992
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204708",
+          "cod_base": "204709",
+          "estacion": "TINGO GRANDE",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "TIABAYA",
+          "entidad": "SEN",
+          "longitud": -71.57431,
+          "altitud": 2196,
+          "latitud": -16.45992,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.30",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.11667,
+            -15.81667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204702",
+          "cod_base": "204702",
+          "estacion": "SUMBAY",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "CAYLLOMA",
+          "distrito": "SAN ANTONIO DE CHUCA",
+          "entidad": "SEN",
+          "longitud": -71.11667,
+          "altitud": 4403,
+          "latitud": -15.81667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.31",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.41575,
+            -5.33922
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220509",
+          "cod_base": "220510",
+          "estacion": "SONDORILLO",
+          "categoria": "05",
+          "departamento": "PIURA",
+          "provincia": "HUANCABAMBA",
+          "distrito": "SONDORILLO",
+          "entidad": "SEN",
+          "longitud": -79.41575,
+          "altitud": 1694,
+          "latitud": -5.33922,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.32",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.15861,
+            -12.00306
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230933",
+          "cod_base": "230941",
+          "estacion": "SHULLCAS",
+          "categoria": "06",
+          "departamento": "JUNIN",
+          "provincia": "HUANCAYO",
+          "distrito": "EL TAMBO",
+          "entidad": "SEN",
+          "longitud": -75.15861,
+          "altitud": 3600,
+          "latitud": -12.00306,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.33",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.70678,
+            -4.83122
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220108",
+          "cod_base": "220111",
+          "estacion": "SAN LORENZO",
+          "categoria": "05",
+          "departamento": "LORETO",
+          "provincia": "ALTO AMAZONAS",
+          "distrito": "BARRANCA",
+          "entidad": "SEN",
+          "longitud": -76.70678,
+          "altitud": 300,
+          "latitud": -4.83122,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.34",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.97514,
+            -13.43942
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203501",
+          "cod_base": "203501",
+          "estacion": "CONTA",
+          "categoria": "05",
+          "departamento": "ICA",
+          "provincia": "CHINCHA",
+          "distrito": "ALTO LARAN",
+          "entidad": "SEN",
+          "longitud": -75.97514,
+          "altitud": 324,
+          "latitud": -13.43942,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.35",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.74111,
+            -6.55972
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220611",
+          "cod_base": "220613",
+          "estacion": "CHOTANO LAJAS",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "CHOTA",
+          "distrito": "LAJAS",
+          "entidad": "SEN",
+          "longitud": -78.74111,
+          "altitud": 2148.2,
+          "latitud": -6.55972,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.36",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.68973,
+            -11.92983
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202906",
+          "cod_base": "202909",
+          "estacion": "CHOSICA",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "LIMA",
+          "distrito": "LURIGANCHO",
+          "entidad": "SEN",
+          "longitud": -76.68973,
+          "altitud": 867,
+          "latitud": -11.92983,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.37",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.19133,
+            -15.45085
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210407",
+          "cod_base": "210407",
+          "estacion": "PUENTE COATA-UNOCOLLA",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "SAN ROMAN",
+          "distrito": "JULIACA",
+          "entidad": "SEN",
+          "longitud": -70.19133,
+          "altitud": 3835,
+          "latitud": -15.45085,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.38",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.75028,
+            -17.16694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204804",
+          "cod_base": "204804",
+          "estacion": "TUMILACA",
+          "categoria": "05",
+          "departamento": "MOQUEGUA",
+          "provincia": "MARISCAL NIETO",
+          "distrito": "TORATA",
+          "entidad": "SEN",
+          "longitud": -70.75028,
+          "altitud": 3164,
+          "latitud": -17.16694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.39",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.05653,
+            -17.11978
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "211705",
+          "cod_base": "211707",
+          "estacion": "VILACOTA",
+          "categoria": "06",
+          "departamento": "TACNA",
+          "provincia": "TARATA",
+          "distrito": "SUSAPAYA",
+          "entidad": "SEN",
+          "longitud": -70.05653,
+          "altitud": 4448,
+          "latitud": -17.11978,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.40",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.25938,
+            -11.7345
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202904",
+          "cod_base": "202904",
+          "estacion": "RIO BLANCO",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "CHICLA",
+          "entidad": "SEN",
+          "longitud": -76.25938,
+          "altitud": 3510,
+          "latitud": -11.7345,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.41",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.32569,
+            -11.1865
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230801",
+          "cod_base": "230902",
+          "estacion": "RIO PALLANGA",
+          "categoria": "06",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "SANTA BARBARA DE CARHUACAYAN",
+          "entidad": "SEN",
+          "longitud": -76.32569,
+          "altitud": 4207,
+          "latitud": -11.1865,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.42",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.1,
+            -11.7
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230803",
+          "cod_base": "230908",
+          "estacion": "RUMICHACA",
+          "categoria": "06",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "YAULI",
+          "entidad": "SEN",
+          "longitud": -76.1,
+          "altitud": 4368,
+          "latitud": -11.7,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.43",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.83333,
+            -15.85
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204501",
+          "cod_base": "204501",
+          "estacion": "SALAMANCA",
+          "categoria": "06",
+          "departamento": "AREQUIPA",
+          "provincia": "CONDESUYOS",
+          "distrito": "SALAMANCA",
+          "entidad": "SEN",
+          "longitud": -72.83333,
+          "altitud": 3200,
+          "latitud": -15.85,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.44",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.78432,
+            -6.54049
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1F02E",
+          "cod_base": "220610",
+          "estacion": "TUNEL CHOTANO",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "CUTERVO",
+          "distrito": "CUTERVO",
+          "entidad": "ANA",
+          "longitud": -78.78432,
+          "altitud": 2027,
+          "latitud": -6.54049,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.45",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.98822,
+            -5.46506
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220814",
+          "cod_base": "220815",
+          "estacion": "COCHALAN",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "SAN IGNACIO",
+          "distrito": "LA COIPA",
+          "entidad": "SEN",
+          "longitud": -78.98822,
+          "altitud": 753.7,
+          "latitud": -5.46506,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.46",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.73377,
+            -7.38332
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "201301",
+          "cod_base": "201301",
+          "estacion": "CASCABAMBA",
+          "categoria": "06",
+          "departamento": "CAJAMARCA",
+          "provincia": "CONTUMAZA",
+          "distrito": "CONTUMAZA",
+          "entidad": "SEN",
+          "longitud": -78.73377,
+          "altitud": 3331,
+          "latitud": -7.38332,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.47",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.58608,
+            -14.89308
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210103",
+          "cod_base": "210103",
+          "estacion": "PUENTE AYAVIRI",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "MELGAR",
+          "distrito": "AYAVIRI",
+          "entidad": "SEN",
+          "longitud": -70.58608,
+          "altitud": 3900,
+          "latitud": -14.89308,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.48",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.548,
+            -4.47
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220107",
+          "cod_base": "220107",
+          "estacion": "BORJA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "ALTO AMAZONAS",
+          "distrito": "MANSERICHE",
+          "entidad": "SEN",
+          "longitud": -77.548,
+          "altitud": 152,
+          "latitud": -4.47,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.49",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.92919,
+            -15.21251
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204506",
+          "cod_base": "204508",
+          "estacion": "CUYAU",
+          "categoria": "06",
+          "departamento": "AREQUIPA",
+          "provincia": "LA UNION",
+          "distrito": "COTAHUASI",
+          "entidad": "SEN",
+          "longitud": -72.92919,
+          "altitud": 2222,
+          "latitud": -15.21251,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.50",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.38361,
+            -6.46694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221801",
+          "cod_base": "221801",
+          "estacion": "CUMBAZA",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "SAN MARTIN",
+          "distrito": "MORALES",
+          "entidad": "SEN",
+          "longitud": -76.38361,
+          "altitud": 350,
+          "latitud": -6.46694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.51",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.60001,
+            -6.41291
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221802",
+          "cod_base": "221802",
+          "estacion": "SHANAO",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "LAMAS",
+          "distrito": "SHANAO",
+          "entidad": "SEN",
+          "longitud": -76.60001,
+          "altitud": 279,
+          "latitud": -6.41291,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.52",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.16694,
+            -7.00028
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221813",
+          "cod_base": "221815",
+          "estacion": "SHAMBOYACU",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "PICOTA",
+          "distrito": "SHAMBOYACU",
+          "entidad": "SEN",
+          "longitud": -76.16694,
+          "altitud": 350,
+          "latitud": -7.00028,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.53",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.28056,
+            -3.75361
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240106",
+          "cod_base": "240105",
+          "estacion": "SEDA LORETO",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "SAN JUAN BAUTISTA",
+          "entidad": "SEN",
+          "longitud": -73.28056,
+          "altitud": 126,
+          "latitud": -3.75361,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.54",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.66694,
+            -3.83361
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240001",
+          "cod_base": "240110",
+          "estacion": "SANTA MARIA NANAY",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "ALTO NANAY",
+          "entidad": "SEN",
+          "longitud": -73.66694,
+          "altitud": 120,
+          "latitud": -3.83361,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.55",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.66678,
+            -11.91984
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202930",
+          "cod_base": "202938",
+          "estacion": "SANTA EULALIA",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SANTA EULALIA",
+          "entidad": "SEN",
+          "longitud": -76.66678,
+          "altitud": 970,
+          "latitud": -11.91984,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.56",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.95334,
+            -4.25785
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240108",
+          "cod_base": "240108",
+          "estacion": "SANTA ROSA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MARISCAL RAMON CASTILLA",
+          "distrito": "RAMON CASTILLA",
+          "entidad": "SEN",
+          "longitud": -69.95334,
+          "altitud": 100,
+          "latitud": -4.25785,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.57",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02823,
+            -11.37009
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202701",
+          "cod_base": "202702",
+          "estacion": "SANTO DOMINGO",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "HUARAL",
+          "distrito": "HUARAL",
+          "entidad": "SEN",
+          "longitud": -77.02823,
+          "altitud": 620,
+          "latitud": -11.37009,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.58",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.83829,
+            -5.04169
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250101",
+          "cod_base": "250101",
+          "estacion": "REQUENA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "REQUENA",
+          "distrito": "REQUENA",
+          "entidad": "SEN",
+          "longitud": -73.83829,
+          "altitud": 200,
+          "latitud": -5.04169,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.59",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.5,
+            -7.26667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221804",
+          "cod_base": "221804",
+          "estacion": "BIAVO",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "BELLAVISTA",
+          "distrito": "ALTO BIAVO",
+          "entidad": "SEN",
+          "longitud": -76.5,
+          "altitud": 290,
+          "latitud": -7.26667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.60",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.13361,
+            -3.50028
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240109",
+          "cod_base": "240109",
+          "estacion": "SANTA CRUZ",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "MAZAN",
+          "entidad": "SEN",
+          "longitud": -73.13361,
+          "altitud": 122,
+          "latitud": -3.50028,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.61",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.01624,
+            -5.0796
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "200415",
+          "cod_base": "200416",
+          "estacion": "SAN PEDRO",
+          "categoria": "05",
+          "departamento": "PIURA",
+          "provincia": "MORROPON",
+          "distrito": "MORROPON",
+          "entidad": "SEN",
+          "longitud": -80.01624,
+          "altitud": 241,
+          "latitud": -5.0796,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.62",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.67922,
+            -2.48747
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240110",
+          "cod_base": "260101",
+          "estacion": "SANTA CLOTILDE",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "NAPO",
+          "entidad": "SEN",
+          "longitud": -73.67922,
+          "altitud": 150,
+          "latitud": -2.48747,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.63",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.30111,
+            -11.76012
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202905",
+          "cod_base": "202905",
+          "estacion": "SAN MATEO",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SAN MATEO",
+          "entidad": "SEN",
+          "longitud": -76.30111,
+          "altitud": 3156,
+          "latitud": -11.76012,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.64",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.49503,
+            -16.31091
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204710",
+          "cod_base": "204711",
+          "estacion": "CHARCANI",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "ALTO SELVA ALEGRE",
+          "entidad": "SEN",
+          "longitud": -71.49503,
+          "altitud": 2643,
+          "latitud": -16.31091,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.65",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.3978,
+            -4.4792
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "200322",
+          "cod_base": "200324",
+          "estacion": "ALAMOR",
+          "categoria": "06",
+          "departamento": "PIURA",
+          "provincia": "SULLANA",
+          "distrito": "LANCONES",
+          "entidad": "SEN",
+          "longitud": -80.3978,
+          "altitud": 118,
+          "latitud": -4.4792,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.66",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.60659,
+            -11.73523
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202903",
+          "cod_base": "202903",
+          "estacion": "AUTISHA",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SAN ANTONIO",
+          "entidad": "SEN",
+          "longitud": -76.60659,
+          "altitud": 2152,
+          "latitud": -11.73523,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.67",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.18936,
+            -14.91975
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210102",
+          "cod_base": "210102",
+          "estacion": "PUENTE CARRETERA AZANGARO",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "AZANGARO",
+          "distrito": "AZANGARO",
+          "entidad": "SEN",
+          "longitud": -70.18936,
+          "altitud": 3860,
+          "latitud": -14.91975,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.68",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.62437,
+            -12.0314
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203003",
+          "cod_base": "203003",
+          "estacion": "ANTAPUCRO",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "ANTIOQUIA",
+          "entidad": "SEN",
+          "longitud": -76.62437,
+          "altitud": 1026,
+          "latitud": -12.0314,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.69",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.75028,
+            -17.61694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "205010",
+          "cod_base": "205010",
+          "estacion": "LOCUMBA",
+          "categoria": "05",
+          "departamento": "TACNA",
+          "provincia": "JORGE BASADRE",
+          "distrito": "LOCUMBA",
+          "entidad": "SEN",
+          "longitud": -70.75028,
+          "altitud": 616,
+          "latitud": -17.61694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.70",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.24222,
+            -3.45694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240112",
+          "cod_base": "260201",
+          "estacion": "LA LIBERTAD",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "MAZAN",
+          "entidad": "SEN",
+          "longitud": -73.24222,
+          "altitud": 100,
+          "latitud": -3.45694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.71",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.68333,
+            -7.43333
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221821",
+          "cod_base": "221902",
+          "estacion": "CAMPANILLA",
+          "categoria": "06",
+          "departamento": "SAN MARTIN",
+          "provincia": "MARISCAL CACERES",
+          "distrito": "CAMPANILLA",
+          "entidad": "SEN",
+          "longitud": -76.68333,
+          "altitud": 390,
+          "latitud": -7.43333,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.72",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.31697,
+            -16.57225
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210502",
+          "cod_base": "210502",
+          "estacion": "PUENTE LOROCO CALLACAME",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "CHUCUITO",
+          "distrito": "HUACULLANI",
+          "entidad": "SEN",
+          "longitud": -69.31697,
+          "altitud": 3951,
+          "latitud": -16.57225,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.73",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.49637,
+            -12.52194
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203101",
+          "cod_base": "203102",
+          "estacion": "LA CAPILLA",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "CAÑETE",
+          "distrito": "CALANGO",
+          "entidad": "SEN",
+          "longitud": -76.49637,
+          "altitud": 403,
+          "latitud": -12.52194,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.74",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.06705,
+            -7.9325
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220204",
+          "cod_base": "220204",
+          "estacion": "LAGUNA HUANGACOCHA",
+          "categoria": "06",
+          "departamento": "LA LIBERTAD",
+          "provincia": "SANCHEZ CARRION",
+          "distrito": "HUAMACHUCO",
+          "entidad": "SEN",
+          "longitud": -78.06705,
+          "altitud": 3895,
+          "latitud": -7.9325,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.75",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.25,
+            -6.71667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221806",
+          "cod_base": "221807",
+          "estacion": "LAGUNA SAUCE",
+          "categoria": "06",
+          "departamento": "SAN MARTIN",
+          "provincia": "SAN MARTIN",
+          "distrito": "ALBERTO LEVEAU",
+          "entidad": "SEN",
+          "longitud": -76.25,
+          "altitud": 618,
+          "latitud": -6.71667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.76",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.20903,
+            -15.44386
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210405",
+          "cod_base": "210405",
+          "estacion": "LAMPA",
+          "categoria": "06",
+          "departamento": "PUNO",
+          "provincia": "SAN ROMAN",
+          "distrito": "JULIACA",
+          "entidad": "SEN",
+          "longitud": -70.20903,
+          "altitud": 3838,
+          "latitud": -15.44386,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.77",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.45685,
+            -3.76848
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "200202",
+          "cod_base": "200202",
+          "estacion": "EL TIGRE",
+          "categoria": "05",
+          "departamento": "TUMBES",
+          "provincia": "TUMBES",
+          "distrito": "SAN JACINTO",
+          "entidad": "SEN",
+          "longitud": -80.45685,
+          "altitud": 44,
+          "latitud": -3.76848,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.78",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.22436,
+            -15.47211
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210406",
+          "cod_base": "210406",
+          "estacion": "PUENTE ISLA CABANILLAS",
+          "categoria": "06",
+          "departamento": "PUNO",
+          "provincia": "SAN ROMAN",
+          "distrito": "JULIACA",
+          "entidad": "SEN",
+          "longitud": -70.22436,
+          "altitud": 3850,
+          "latitud": -15.47211,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.79",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.95028,
+            -5.91694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220405",
+          "cod_base": "220405",
+          "estacion": "CACAO",
+          "categoria": "06",
+          "departamento": "CAJAMARCA",
+          "provincia": "JAEN",
+          "distrito": "COLASAY",
+          "entidad": "SEN",
+          "longitud": -78.95028,
+          "altitud": 1252,
+          "latitud": -5.91694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.80",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.34389,
+            -10.606
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202404",
+          "cod_base": "202404",
+          "estacion": "CAHUA",
+          "categoria": "05",
+          "departamento": "ANCASH",
+          "provincia": "OCROS",
+          "distrito": "ACAS",
+          "entidad": "SEN",
+          "longitud": -77.34389,
+          "altitud": 812,
+          "latitud": -10.606,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.81",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.0735,
+            -3.48206
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240111",
+          "cod_base": "260102",
+          "estacion": "BELLAVISTA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "MAZAN",
+          "entidad": "SEN",
+          "longitud": -73.0735,
+          "altitud": 110,
+          "latitud": -3.48206,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.82",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.28932,
+            -6.80359
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "201001",
+          "cod_base": "201001",
+          "estacion": "BATAN",
+          "categoria": "05",
+          "departamento": "LAMBAYEQUE",
+          "provincia": "CHICLAYO",
+          "distrito": "OYOTUN",
+          "entidad": "SEN",
+          "longitud": -79.28932,
+          "altitud": 246,
+          "latitud": -6.80359,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.83",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.9054,
+            -4.51439
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220105",
+          "cod_base": "220105",
+          "estacion": "SAN REGIS",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "LORETO",
+          "distrito": "NAUTA",
+          "entidad": "SEN",
+          "longitud": -73.9054,
+          "altitud": 80,
+          "latitud": -4.51439,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.84",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.29111,
+            -8.10639
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "201717",
+          "cod_base": "201717",
+          "estacion": "HUACAMARCANGA",
+          "categoria": "06",
+          "departamento": "LA LIBERTAD",
+          "provincia": "SANTIAGO DE CHUCO",
+          "distrito": "QUIRUVILCA",
+          "entidad": "SEN",
+          "longitud": -78.29111,
+          "altitud": 3650,
+          "latitud": -8.10639,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.85",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.69957,
+            -16.54193
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204621",
+          "cod_base": "204622",
+          "estacion": "HACIENDA PAMPATA",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "CAMANA",
+          "distrito": "NICOLAS DE PIEROLA",
+          "entidad": "SEN",
+          "longitud": -72.69957,
+          "altitud": 73,
+          "latitud": -16.54193,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.86",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.78333,
+            -10.51667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "202601",
+          "cod_base": "202601",
+          "estacion": "LAGUNA SURASACA",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "OYON",
+          "distrito": "OYON",
+          "entidad": "SEN",
+          "longitud": -76.78333,
+          "altitud": 4400,
+          "latitud": -10.51667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.87",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.63879,
+            -16.99936
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204905",
+          "cod_base": "204905",
+          "estacion": "LA PASCANA",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "ISLAY",
+          "distrito": "COCACHACRA",
+          "entidad": "SEN",
+          "longitud": -71.63879,
+          "altitud": 222,
+          "latitud": -16.99936,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.88",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.18765,
+            -5.89006
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221506",
+          "cod_base": "221506",
+          "estacion": "MAGUNCHAL",
+          "categoria": "05",
+          "departamento": "AMAZONAS",
+          "provincia": "UTCUBAMBA",
+          "distrito": "JAMALCA",
+          "entidad": "SEN",
+          "longitud": -78.18765,
+          "altitud": 632,
+          "latitud": -5.89006,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.89",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.40376,
+            -7.22064
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220205",
+          "cod_base": "220205",
+          "estacion": "JESUS TUNEL",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "CAJAMARCA",
+          "distrito": "JESUS",
+          "entidad": "SEN",
+          "longitud": -78.40376,
+          "altitud": 2568,
+          "latitud": -7.22064,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.90",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.47833,
+            -7.165
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220213",
+          "cod_base": "220213",
+          "estacion": "MASHCON",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "CAJAMARCA",
+          "distrito": "CAJAMARCA",
+          "entidad": "SEN",
+          "longitud": -78.47833,
+          "altitud": 2515,
+          "latitud": -7.165,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.91",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.95,
+            -14.26667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230705",
+          "cod_base": "230705",
+          "estacion": "HUASAPAMPA",
+          "categoria": "05",
+          "departamento": "AYACUCHO",
+          "provincia": "LUCANAS",
+          "distrito": "AUCARA",
+          "entidad": "SEN",
+          "longitud": -73.95,
+          "altitud": 2900,
+          "latitud": -14.26667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.92",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.60639,
+            -13.84694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203702",
+          "cod_base": "203704",
+          "estacion": "HUAMANI",
+          "categoria": "06",
+          "departamento": "ICA",
+          "provincia": "ICA",
+          "distrito": "SAN JOSE DE LOS MOLINOS",
+          "entidad": "SEN",
+          "longitud": -75.60639,
+          "altitud": 787,
+          "latitud": -13.84694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.93",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.95028,
+            -14.63361
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230712",
+          "cod_base": "230712",
+          "estacion": "HUALLPOCA",
+          "categoria": "05",
+          "departamento": "ICA",
+          "provincia": "NAZCA",
+          "distrito": "EL INGENIO",
+          "entidad": "SEN",
+          "longitud": -74.95028,
+          "altitud": 1025,
+          "latitud": -14.63361,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.94",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.79258,
+            -15.21647
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210201",
+          "cod_base": "210201",
+          "estacion": "PUENTE HUANCANE",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "HUANCANE",
+          "distrito": "HUANCANE",
+          "entidad": "SEN",
+          "longitud": -69.79258,
+          "altitud": 3860,
+          "latitud": -15.21647,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.95",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.83799,
+            -7.21969
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "201207",
+          "cod_base": "201207",
+          "estacion": "PUENTE CHILETE",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "CONTUMAZA",
+          "distrito": "CHILETE",
+          "entidad": "SEN",
+          "longitud": -78.83799,
+          "altitud": 848,
+          "latitud": -7.21969,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.96",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.48348,
+            -16.0079
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "204617",
+          "cod_base": "204618",
+          "estacion": "HUATIAPA",
+          "categoria": "05",
+          "departamento": "AREQUIPA",
+          "provincia": "CASTILLA",
+          "distrito": "APLAO",
+          "entidad": "SEN",
+          "longitud": -72.48348,
+          "altitud": 689,
+          "latitud": -16.0079,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.97",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.62592,
+            -16.08825
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210301",
+          "cod_base": "210301",
+          "estacion": "PUENTE CARRETERA ILAVE",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "EL COLLAO",
+          "distrito": "ILAVE",
+          "entidad": "SEN",
+          "longitud": -69.62592,
+          "altitud": 3850,
+          "latitud": -16.08825,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.98",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.43154,
+            -5.75568
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221501",
+          "cod_base": "221501",
+          "estacion": "LOS NARANJOS",
+          "categoria": "05",
+          "departamento": "AMAZONAS",
+          "provincia": "UTCUBAMBA",
+          "distrito": "BAGUA GRANDE",
+          "entidad": "SEN",
+          "longitud": -78.43154,
+          "altitud": 427,
+          "latitud": -5.75568,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.99",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.03733,
+            -16.56383
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "270700",
+          "cod_base": "210501",
+          "estacion": "PUENTE DESAGUADERO",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "CHUCUITO",
+          "distrito": "DESAGUADERO",
+          "entidad": "SEN",
+          "longitud": -69.03733,
+          "altitud": 3808,
+          "latitud": -16.56383,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.100",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.02356,
+            -15.838
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "270000",
+          "cod_base": "270000",
+          "estacion": "ENAFER",
+          "categoria": "06",
+          "departamento": "PUNO",
+          "provincia": "PUNO",
+          "distrito": "PUNO",
+          "entidad": "SEN",
+          "longitud": -70.02356,
+          "altitud": 3808,
+          "latitud": -15.838,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.101",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.71192,
+            -15.56172
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "270300",
+          "cod_base": "210403",
+          "estacion": "RIO VERDE",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "LAMPA",
+          "distrito": "SANTA LUCIA",
+          "entidad": "SEN",
+          "longitud": -70.71192,
+          "altitud": 4250,
+          "latitud": -15.56172,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.102",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.70561,
+            -14.15375
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "260501",
+          "cod_base": "260501",
+          "estacion": "LIMBANI",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "SANDIA",
+          "distrito": "LIMBANI",
+          "entidad": "SEN",
+          "longitud": -69.70561,
+          "altitud": 3320,
+          "latitud": -14.15375,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.103",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.72056,
+            -13.10694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250301",
+          "cod_base": "230715",
+          "estacion": "CHACLLABAMBA",
+          "categoria": "05",
+          "departamento": "CUSCO",
+          "provincia": "PAUCARTAMBO",
+          "distrito": "CHALLABAMBA",
+          "entidad": "SEN",
+          "longitud": -71.72056,
+          "altitud": 2518,
+          "latitud": -13.10694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.104",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.74139,
+            -7.27056
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230504",
+          "cod_base": "230504",
+          "estacion": "HUAYABAMBA",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "MARISCAL CACERES",
+          "distrito": "JUANJUI",
+          "entidad": "SEN",
+          "longitud": -76.74139,
+          "altitud": 310,
+          "latitud": -7.27056,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.105",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.45456,
+            -17.63312
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "214901",
+          "cod_base": "214901",
+          "estacion": "CORUCA",
+          "categoria": "05",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "TACNA",
+          "entidad": "SEN",
+          "longitud": -70.45456,
+          "altitud": 672,
+          "latitud": -17.63312,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.106",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.2,
+            -11.15
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212301",
+          "cod_base": "202611",
+          "estacion": "SAYAN",
+          "categoria": "06",
+          "departamento": "LIMA",
+          "provincia": "HUAURA",
+          "distrito": "SAYAN",
+          "entidad": "SEN",
+          "longitud": -77.2,
+          "altitud": 790,
+          "latitud": -11.15,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.107",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.24194,
+            -12.04806
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230931",
+          "cod_base": "230939",
+          "estacion": "PUENTE BREÑA",
+          "categoria": "05",
+          "departamento": "JUNIN",
+          "provincia": "HUANCAYO",
+          "distrito": "EL TAMBO",
+          "entidad": "SEN",
+          "longitud": -75.24194,
+          "altitud": 3220,
+          "latitud": -12.04806,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.108",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.17167,
+            -14.4175
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230502",
+          "cod_base": "230502",
+          "estacion": "PUENTE COLCA",
+          "categoria": "06",
+          "departamento": "CUSCO",
+          "provincia": "CHUMBIVILCAS",
+          "distrito": "LLUSCO",
+          "entidad": "SEN",
+          "longitud": -72.17167,
+          "altitud": 3250,
+          "latitud": -14.4175,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.109",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.87381,
+            -15.25544
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210101",
+          "cod_base": "210101",
+          "estacion": "PUENTE RAMIS",
+          "categoria": "05",
+          "departamento": "PUNO",
+          "provincia": "HUANCANE",
+          "distrito": "HUANCANE",
+          "entidad": "SEN",
+          "longitud": -69.87381,
+          "altitud": 3812,
+          "latitud": -15.25544,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.110",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.50789,
+            -8.18475
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230700",
+          "cod_base": "221814",
+          "estacion": "PUENTE TOCACHE",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "TOCACHE",
+          "distrito": "TOCACHE",
+          "entidad": "SEN",
+          "longitud": -76.50789,
+          "altitud": 508,
+          "latitud": -8.18475,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.111",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.21281,
+            -8.83091
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250103",
+          "cod_base": "202412",
+          "estacion": "SAN ALEJANDRO",
+          "categoria": "06",
+          "departamento": "UCAYALI",
+          "provincia": "PADRE ABAD",
+          "distrito": "IRAZOLA",
+          "entidad": "SEN",
+          "longitud": -75.21281,
+          "altitud": 207,
+          "latitud": -8.83091,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.112",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.84139,
+            -13.42778
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250303",
+          "cod_base": "230401",
+          "estacion": "PISAC",
+          "categoria": "05",
+          "departamento": "CUSCO",
+          "provincia": "CALCA",
+          "distrito": "PISAC",
+          "entidad": "SEN",
+          "longitud": -71.84139,
+          "altitud": 2971,
+          "latitud": -13.42778,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.113",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.59528,
+            -13.31472
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250405",
+          "cod_base": "230301",
+          "estacion": "PAUCARTAMBO",
+          "categoria": "05",
+          "departamento": "CUSCO",
+          "provincia": "PAUCARTAMBO",
+          "distrito": "PAUCARTAMBO",
+          "entidad": "SEN",
+          "longitud": -71.59528,
+          "altitud": 3042,
+          "latitud": -13.31472,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.114",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.82756,
+            -13.43422
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "251001",
+          "cod_base": "230703",
+          "estacion": "MARCELINO SERNA (PAMPAS)",
+          "categoria": "05",
+          "departamento": "AYACUCHO",
+          "provincia": "HUAMANGA",
+          "distrito": "OCROS",
+          "entidad": "SEN",
+          "longitud": -73.82756,
+          "altitud": 1982,
+          "latitud": -13.43422,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.115",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.00056,
+            -7.35208
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "251102",
+          "cod_base": "231301",
+          "estacion": "CONTAMANA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "UCAYALI",
+          "distrito": "CONTAMANA",
+          "entidad": "SEN",
+          "longitud": -75.00056,
+          "altitud": 134,
+          "latitud": -7.35208,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.116",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.09861,
+            -6.56944
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230601",
+          "cod_base": "230601",
+          "estacion": "CHAZUTA",
+          "categoria": "06",
+          "departamento": "SAN MARTIN",
+          "provincia": "SAN MARTIN",
+          "distrito": "CHAZUTA",
+          "entidad": "SEN",
+          "longitud": -76.09861,
+          "altitud": 155,
+          "latitud": -6.56944,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.117",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.67869,
+            -13.92475
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "213500",
+          "cod_base": "203707",
+          "estacion": "LOS MOLINOS (ALEJANDRO PLAZA GARCIA)",
+          "categoria": "05",
+          "departamento": "ICA",
+          "provincia": "ICA",
+          "distrito": "SAN JOSE DE LOS MOLINOS",
+          "entidad": "SEN",
+          "longitud": -75.67869,
+          "altitud": 500,
+          "latitud": -13.92475,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.118",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.83719,
+            -11.69463
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "111151",
+          "cod_base": "202805",
+          "estacion": "PUENTE MAGDALENA",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "CANTA",
+          "distrito": "SANTA ROSA DE QUIVES",
+          "entidad": "SEN",
+          "longitud": -76.83719,
+          "altitud": 935,
+          "latitud": -11.69463,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.119",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.07395,
+            -6.65579
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "106122",
+          "cod_base": "200909",
+          "estacion": "CIRATO",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "SANTA CRUZ",
+          "distrito": "SEXI",
+          "entidad": "SEN",
+          "longitud": -79.07395,
+          "altitud": 964,
+          "latitud": -6.65579,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.120",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.19453,
+            -13.0283
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "203302",
+          "cod_base": "203302",
+          "estacion": "SOCSI",
+          "categoria": "05",
+          "departamento": "LIMA",
+          "provincia": "CAÑETE",
+          "distrito": "LUNAHUANA",
+          "entidad": "SEN",
+          "longitud": -76.19453,
+          "altitud": 310,
+          "latitud": -13.0283,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.121",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.51823,
+            -6.68656
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221106",
+          "cod_base": "220309",
+          "estacion": "LLAUCANO CORELLAMA",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "HUALGAYOC",
+          "distrito": "BAMBAMARCA",
+          "entidad": "SEN",
+          "longitud": -78.51823,
+          "altitud": 2530,
+          "latitud": -6.68656,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.122",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.1824,
+            -10.3399
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221309",
+          "cod_base": "221825",
+          "estacion": "SAN RAFAEL",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "AMBO",
+          "distrito": "SAN RAFAEL",
+          "entidad": "SEN",
+          "longitud": -76.1824,
+          "altitud": 2717,
+          "latitud": -10.3399,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.123",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.92135,
+            -14.23998
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "213600",
+          "cod_base": "203820",
+          "estacion": "LLAUTA",
+          "categoria": "05",
+          "departamento": "AYACUCHO",
+          "provincia": "LUCANAS",
+          "distrito": "LLAUTA",
+          "entidad": "SEN",
+          "longitud": -74.92135,
+          "altitud": 2615,
+          "latitud": -14.23998,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.124",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.89205,
+            -5.17378
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240401",
+          "cod_base": "240111",
+          "estacion": "ANGAMOS",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "REQUENA",
+          "distrito": "YAQUERANA",
+          "entidad": "SEN",
+          "longitud": -72.89205,
+          "altitud": 90,
+          "latitud": -5.17378,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.125",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.66739,
+            -2.44506
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "240402",
+          "cod_base": "240402",
+          "estacion": "EL ESTRECHO",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "PUTUMAYO",
+          "distrito": "PUTUMAYO",
+          "entidad": "SEN",
+          "longitud": -72.66739,
+          "altitud": 158,
+          "latitud": -2.44506,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.126",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.64972,
+            -4.90442
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "251104",
+          "cod_base": "231303",
+          "estacion": "GENARO HERRERA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "REQUENA",
+          "distrito": "JENARO HERRERA",
+          "entidad": "SEN",
+          "longitud": -73.64972,
+          "altitud": 126,
+          "latitud": -4.90442,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.127",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.34606,
+            -11.20139
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250501",
+          "cod_base": "230944",
+          "estacion": "RIO TULUMAYO",
+          "categoria": "06",
+          "departamento": "JUNIN",
+          "provincia": "CHANCHAMAYO",
+          "distrito": "VITOC",
+          "entidad": "SEN",
+          "longitud": -75.34606,
+          "altitud": 1259,
+          "latitud": -11.20139,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.128",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.50963,
+            -9.60776
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "211404",
+          "cod_base": "201720",
+          "estacion": "SAN PEDRO",
+          "categoria": "06",
+          "departamento": "ANCASH",
+          "provincia": "HUARAZ",
+          "distrito": "HUARAZ",
+          "entidad": "SEN",
+          "longitud": -77.50963,
+          "altitud": 3170,
+          "latitud": -9.60776,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.129",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.45689,
+            -3.7687
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4724A3F6",
+          "cod_base": "472191AC",
+          "estacion": "EL TIGRE",
+          "categoria": "22",
+          "departamento": "TUMBES",
+          "provincia": "TUMBES",
+          "distrito": "SAN JACINTO",
+          "entidad": "SEN",
+          "longitud": -80.45689,
+          "altitud": 44,
+          "latitud": -3.7687,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.130",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.19833,
+            -11.13472
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4724966C",
+          "cod_base": "472285D4",
+          "estacion": "SAYAN",
+          "categoria": "22",
+          "departamento": "LIMA",
+          "provincia": "HUAURA",
+          "distrito": "SAYAN",
+          "entidad": "SEN",
+          "longitud": -77.19833,
+          "altitud": 647,
+          "latitud": -11.13472,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.131",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.95588,
+            -14.632
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47283708",
+          "cod_base": "47283708",
+          "estacion": "HUALLPOCA GORE",
+          "categoria": "22",
+          "departamento": "ICA",
+          "provincia": "NAZCA",
+          "distrito": "EL INGENIO",
+          "entidad": "GICA",
+          "longitud": -74.95588,
+          "altitud": 683,
+          "latitud": -14.632,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.132",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.40066,
+            -13.78826
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47284198",
+          "cod_base": "47284198",
+          "estacion": "CHALLACA GORE",
+          "categoria": "22",
+          "departamento": "HUANCAVELICA",
+          "provincia": "HUAYTARA",
+          "distrito": "AYAVI",
+          "entidad": "GICA",
+          "longitud": -75.40066,
+          "altitud": 1712,
+          "latitud": -13.78826,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.133",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.5733,
+            -4.50736
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221402",
+          "cod_base": "221401",
+          "estacion": "NAUTA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "LORETO",
+          "distrito": "NAUTA",
+          "entidad": "SEN",
+          "longitud": -73.5733,
+          "altitud": 110,
+          "latitud": -4.50736,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.134",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.52437,
+            -6.67411
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221110",
+          "cod_base": "220307",
+          "estacion": "PUENTE  MAYGASBAMBA",
+          "categoria": "05",
+          "departamento": "CAJAMARCA",
+          "provincia": "HUALGAYOC",
+          "distrito": "BAMBAMARCA",
+          "entidad": "SEN",
+          "longitud": -78.52437,
+          "altitud": 2551,
+          "latitud": -6.67411,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.135",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.1945,
+            -13.02825
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472191AC",
+          "cod_base": "213100",
+          "estacion": "SOCSI PSI",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "CAÑETE",
+          "distrito": "LUNAHUANA",
+          "entidad": "PSI1",
+          "longitud": -76.1945,
+          "altitud": 310,
+          "latitud": -13.02825,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.136",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.85336,
+            -17.00694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "214700",
+          "cod_base": "204812",
+          "estacion": "OTORA",
+          "categoria": "05",
+          "departamento": "MOQUEGUA",
+          "provincia": "MARISCAL NIETO",
+          "distrito": "TORATA",
+          "entidad": "SEN",
+          "longitud": -70.85336,
+          "altitud": 2595,
+          "latitud": -17.00694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.137",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.04472,
+            -17.91528
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "215000",
+          "cod_base": "205206",
+          "estacion": "CANAL UCHUSUMA",
+          "categoria": "06",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "PACHIA",
+          "entidad": "SEN",
+          "longitud": -70.04472,
+          "altitud": 1718,
+          "latitud": -17.91528,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.138",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.635,
+            -17.36389
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "270900",
+          "cod_base": "211706",
+          "estacion": "CHUAPALCA",
+          "categoria": "06",
+          "departamento": "TACNA",
+          "provincia": "TARATA",
+          "distrito": "TARATA",
+          "entidad": "SEN",
+          "longitud": -69.635,
+          "altitud": 4338,
+          "latitud": -17.36389,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.139",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.07384,
+            -6.65583
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4724D566",
+          "cod_base": "4721C1D0",
+          "estacion": "CIRATO",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "SANTA CRUZ",
+          "distrito": "CATACHE",
+          "entidad": "SEN",
+          "longitud": -79.07384,
+          "altitud": 959,
+          "latitud": -6.65583,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.140",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.57094,
+            -16.14039
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "270503",
+          "cod_base": "210801",
+          "estacion": "PUENTE ZAPATILLA",
+          "categoria": "06",
+          "departamento": "PUNO",
+          "provincia": "EL COLLAO",
+          "distrito": "PILCUYO",
+          "entidad": "SEN",
+          "longitud": -69.57094,
+          "altitud": 3840,
+          "latitud": -16.14039,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.141",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.03024,
+            -6.84465
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "221303",
+          "cod_base": "201111",
+          "estacion": "BALZAS",
+          "categoria": "06",
+          "departamento": "CAJAMARCA",
+          "provincia": "CELENDIN",
+          "distrito": "UTCO",
+          "entidad": "SEN",
+          "longitud": -78.03024,
+          "altitud": 854,
+          "latitud": -6.84465,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.142",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.16707,
+            -4.29909
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4724B080",
+          "cod_base": "4721A436",
+          "estacion": "EL CIRUELO",
+          "categoria": "22",
+          "departamento": "PIURA",
+          "provincia": "AYABACA",
+          "distrito": "SUYO",
+          "entidad": "SEN",
+          "longitud": -80.16707,
+          "altitud": 243,
+          "latitud": -4.29909,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.143",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.36667,
+            -6.88333
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230715",
+          "cod_base": "221823",
+          "estacion": "PICOTA",
+          "categoria": "05",
+          "departamento": "SAN MARTIN",
+          "provincia": "PICOTA",
+          "distrito": "PICOTA",
+          "entidad": "SEN",
+          "longitud": -76.36667,
+          "altitud": 220,
+          "latitud": -6.88333,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.144",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.17293,
+            -5.1129
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4724C610",
+          "cod_base": "4721B740",
+          "estacion": "PUENTE ÑACARA",
+          "categoria": "22",
+          "departamento": "PIURA",
+          "provincia": "MORROPON",
+          "distrito": "CHULUCANAS",
+          "entidad": "ANA",
+          "longitud": -80.17293,
+          "altitud": 91,
+          "latitud": -5.1129,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.145",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.02356,
+            -15.838
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47256412",
+          "cod_base": "47256412",
+          "estacion": "ENAFER",
+          "categoria": "22",
+          "departamento": "PUNO",
+          "provincia": "PUNO",
+          "distrito": "PUNO",
+          "entidad": "SEN",
+          "longitud": -70.02356,
+          "altitud": 3808,
+          "latitud": -15.838,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.146",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.23694,
+            -3.72722
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47252718",
+          "cod_base": "47227550",
+          "estacion": "ENAPU PERU",
+          "categoria": "22",
+          "departamento": "LORETO",
+          "provincia": "MAYNAS",
+          "distrito": "PUNCHANA",
+          "entidad": "SEN",
+          "longitud": -73.23694,
+          "altitud": 126,
+          "latitud": -3.72722,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.147",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.03025,
+            -6.84461
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472501F4",
+          "cod_base": "47226626",
+          "estacion": "BALSAS",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "CELENDIN",
+          "distrito": "UTCO",
+          "entidad": "SEN",
+          "longitud": -78.03025,
+          "altitud": 871,
+          "latitud": -6.84461,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.148",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.84111,
+            -13.4275
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472A6280",
+          "cod_base": "472A6280",
+          "estacion": "NUEVO PISAC",
+          "categoria": "22",
+          "departamento": "CUSCO",
+          "provincia": "CALCA",
+          "distrito": "PISAC",
+          "entidad": "SEN",
+          "longitud": -71.84111,
+          "altitud": 2971,
+          "latitud": -13.4275,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.149",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.1145,
+            -16.427
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472D23BE",
+          "cod_base": "472D23BE",
+          "estacion": "OCOÑA",
+          "categoria": "22",
+          "departamento": "AREQUIPA",
+          "provincia": "CAMANA",
+          "distrito": "OCOÑA",
+          "entidad": "SEN",
+          "longitud": -73.1145,
+          "altitud": 23,
+          "latitud": -16.427,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.150",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.56342,
+            -13.17408
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472935F2",
+          "cod_base": "472935F2",
+          "estacion": "INTIHUATANA H",
+          "categoria": "18",
+          "departamento": "CUSCO",
+          "provincia": "URUBAMBA",
+          "distrito": "MACHUPICCHU",
+          "entidad": "MACH",
+          "longitud": -72.56342,
+          "altitud": 1778,
+          "latitud": -13.17408,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.151",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.17481,
+            -13.99183
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472AE494",
+          "cod_base": "472AE494",
+          "estacion": "SANTA ROSA CHAPIMARCA",
+          "categoria": "18",
+          "departamento": "APURIMAC",
+          "provincia": "AYMARAES",
+          "distrito": "CHAPIMARCA",
+          "entidad": "GAPU",
+          "longitud": -73.17481,
+          "altitud": 2263,
+          "latitud": -13.99183,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.152",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.10047,
+            -13.95139
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472AF7E2",
+          "cod_base": "472AF7E2",
+          "estacion": "PUNANQUI",
+          "categoria": "18",
+          "departamento": "APURIMAC",
+          "provincia": "COTABAMBAS",
+          "distrito": "MARA",
+          "entidad": "GAPU",
+          "longitud": -72.10047,
+          "altitud": 2701,
+          "latitud": -13.95139,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.153",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.47178,
+            -17.74313
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4722F344",
+          "cod_base": "4722F344",
+          "estacion": "LA TRANCA PSI",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "INCLAN",
+          "entidad": "PSI1",
+          "longitud": -70.47178,
+          "altitud": 629,
+          "latitud": -17.74313,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.154",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.157,
+            -5.40779
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "251100",
+          "cod_base": "231302",
+          "estacion": "FLOR DE PUNGA",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "REQUENA",
+          "distrito": "CAPELO",
+          "entidad": "SEN",
+          "longitud": -74.157,
+          "altitud": 135,
+          "latitud": -5.40779,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.155",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.83801,
+            -7.21976
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4727470A",
+          "cod_base": "4727470A",
+          "estacion": "PUENTE CHILETE",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "CONTUMAZA",
+          "distrito": "CHILETE",
+          "entidad": "SEN",
+          "longitud": -78.83801,
+          "altitud": 848,
+          "latitud": -7.21976,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.156",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.96109,
+            -7.66069
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "211001",
+          "cod_base": "211001",
+          "estacion": "SALINAR PSI",
+          "categoria": "18",
+          "departamento": "LA LIBERTAD",
+          "provincia": "ASCOPE",
+          "distrito": "ASCOPE",
+          "entidad": "PSI1",
+          "longitud": -78.96109,
+          "altitud": 361,
+          "latitud": -7.66069,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.157",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.27598,
+            -5.81968
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "220907",
+          "cod_base": "220907",
+          "estacion": "NARANJITO",
+          "categoria": "18",
+          "departamento": "AMAZONAS",
+          "provincia": "UTCUBAMBA",
+          "distrito": "JAMALCA",
+          "entidad": "MEM",
+          "longitud": -78.27598,
+          "altitud": 500,
+          "latitud": -5.81968,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.158",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.18667,
+            -5.88667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472B2370",
+          "cod_base": "472B2370",
+          "estacion": "MAGUNCHAL",
+          "categoria": "18",
+          "departamento": "AMAZONAS",
+          "provincia": "UTCUBAMBA",
+          "distrito": "JAMALCA",
+          "entidad": "MEM",
+          "longitud": -78.18667,
+          "altitud": 675,
+          "latitud": -5.88667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.159",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.4894,
+            -5.45096
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472B55E0",
+          "cod_base": "472B55E0",
+          "estacion": "PUENTE SALINAS AMOJAO",
+          "categoria": "18",
+          "departamento": "AMAZONAS",
+          "provincia": "BAGUA",
+          "distrito": "ARAMANGO",
+          "entidad": "MEM",
+          "longitud": -78.4894,
+          "altitud": 381,
+          "latitud": -5.45096,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.160",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.50247,
+            -11.66208
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212601",
+          "cod_base": "212601",
+          "estacion": "SHEQUE EDEGEL",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "HUANZA",
+          "entidad": "EDEG",
+          "longitud": -76.50247,
+          "altitud": 3195,
+          "latitud": -11.66208,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.161",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.15224,
+            -17.96844
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E13530",
+          "cod_base": "47E13530",
+          "estacion": "CERRO BLANCO",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "CALANA",
+          "entidad": "ANA",
+          "longitud": -70.15224,
+          "altitud": 885,
+          "latitud": -17.96844,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.162",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.00949,
+            -17.23771
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1763A",
+          "cod_base": "47E1763A",
+          "estacion": "SALIDA TUNEL KOVIRE",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TARATA",
+          "distrito": "SUSAPAYA",
+          "entidad": "ANA",
+          "longitud": -70.00949,
+          "altitud": 4356,
+          "latitud": -17.23771,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.163",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.94863,
+            -17.3692
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1B324",
+          "cod_base": "47E1B324",
+          "estacion": "REPRESA JARUMAS",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TARATA",
+          "distrito": "TICACO",
+          "entidad": "ANA",
+          "longitud": -69.94863,
+          "altitud": 4548,
+          "latitud": -17.3692,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.164",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.00886,
+            -16.58989
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E26242",
+          "cod_base": "47E26242",
+          "estacion": "BOLLADERO",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "VITOR",
+          "entidad": "ANA",
+          "longitud": -72.00886,
+          "altitud": 994,
+          "latitud": -16.58989,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.165",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.34388,
+            -10.60597
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472182DA",
+          "cod_base": "472182DA",
+          "estacion": "YANAPAMPA PSI",
+          "categoria": "18",
+          "departamento": "ANCASH",
+          "provincia": "OCROS",
+          "distrito": "ACAS",
+          "entidad": "PSI1",
+          "longitud": -77.34388,
+          "altitud": 809,
+          "latitud": -10.60597,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.166",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.39898,
+            -3.97972
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E01126",
+          "cod_base": "47E01126",
+          "estacion": "CABO INGA",
+          "categoria": "18",
+          "departamento": "TUMBES",
+          "provincia": "TUMBES",
+          "distrito": "SAN JACINTO",
+          "entidad": "ANA",
+          "longitud": -80.39898,
+          "altitud": 143,
+          "latitud": -3.97972,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.167",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.69924,
+            -5.28985
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E074C0",
+          "cod_base": "47E074C0",
+          "estacion": "HACIENDA BARRIOS",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "MORROPON",
+          "distrito": "SAN JUAN DE BIGOTE",
+          "entidad": "ANA",
+          "longitud": -79.69924,
+          "altitud": 324,
+          "latitud": -5.28985,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.168",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.96412,
+            -4.39338
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0C74E",
+          "cod_base": "47E0C74E",
+          "estacion": "PUENTE MACARA",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "AYABACA",
+          "distrito": "SUYO",
+          "entidad": "ANA",
+          "longitud": -79.96412,
+          "altitud": 385,
+          "latitud": -4.39338,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.169",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.5075,
+            -11.65333
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472C14DE",
+          "cod_base": "472C14DE",
+          "estacion": "SHEQUE SEDAPAL",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "HUANZA",
+          "entidad": "CON",
+          "longitud": -76.5075,
+          "altitud": 3150,
+          "latitud": -11.65333,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.170",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.101,
+            -5.898
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230602",
+          "cod_base": "230602",
+          "estacion": "YURIMAGUAS ENP",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "ALTO AMAZONAS",
+          "distrito": "YURIMAGUAS",
+          "entidad": "SEN",
+          "longitud": -76.101,
+          "altitud": 145,
+          "latitud": -5.898,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.171",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.54119,
+            -6.66975
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4726D092",
+          "cod_base": "4726D092",
+          "estacion": "BAMBAMARCA H GORE",
+          "categoria": "18",
+          "departamento": "CAJAMARCA",
+          "provincia": "HUALGAYOC",
+          "distrito": "BAMBAMARCA",
+          "entidad": "GCAJ",
+          "longitud": -78.54119,
+          "altitud": 2866,
+          "latitud": -6.66975,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.172",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.23403,
+            -14.16711
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "114118",
+          "cod_base": "114118",
+          "estacion": "SALCCA",
+          "categoria": "18",
+          "departamento": "CUSCO",
+          "provincia": "CANCHIS",
+          "distrito": "COMBAPATA",
+          "entidad": "GCUS",
+          "longitud": -71.23403,
+          "altitud": 3918,
+          "latitud": -14.16711,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.173",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.15111,
+            -9.84694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472B730C",
+          "cod_base": "472B730C",
+          "estacion": "TARUCA",
+          "categoria": "18",
+          "departamento": "HUANUCO",
+          "provincia": "HUANUCO",
+          "distrito": "CHURUBAMBA",
+          "entidad": "MEM",
+          "longitud": -76.15111,
+          "altitud": 408,
+          "latitud": -9.84694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.174",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.28831,
+            -17.11413
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1654C",
+          "cod_base": "47E1654C",
+          "estacion": "CORACHAY II",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "CANDARAVE",
+          "distrito": "CANDARAVE",
+          "entidad": "ANA",
+          "longitud": -70.28831,
+          "altitud": 4146,
+          "latitud": -17.11413,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.175",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.76097,
+            -17.61756
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E186BE",
+          "cod_base": "47E186BE",
+          "estacion": "PUENTE VIEJO",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "JORGE BASADRE",
+          "distrito": "LOCUMBA",
+          "entidad": "ANA",
+          "longitud": -70.76097,
+          "altitud": 574,
+          "latitud": -17.61756,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.176",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.09888,
+            -17.8151
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E195C8",
+          "cod_base": "47E195C8",
+          "estacion": "CHALLATA",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "PACHIA",
+          "entidad": "ANA",
+          "longitud": -70.09888,
+          "altitud": 1482,
+          "latitud": -17.8151,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.177",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.11667,
+            -15.81667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472ED434",
+          "cod_base": "472ED434",
+          "estacion": "SUMBAY",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "CAYLLOMA",
+          "distrito": "SAN ANTONIO DE CHUCA",
+          "entidad": "ANA",
+          "longitud": -71.11667,
+          "altitud": 4403,
+          "latitud": -15.81667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.178",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.49511,
+            -16.31086
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472147C4",
+          "cod_base": "472147C4",
+          "estacion": "CHARCANI PSI",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "CAYMA",
+          "entidad": "ANA",
+          "longitud": -71.49511,
+          "altitud": 2658,
+          "latitud": -16.31086,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.179",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.7881,
+            -11.20158
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E2323E",
+          "cod_base": "47E2323E",
+          "estacion": "CUCHUANCA",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUARAL",
+          "distrito": "VEINTISIETE DE NOVIEMBRE",
+          "entidad": "ANA",
+          "longitud": -76.7881,
+          "altitud": 2310,
+          "latitud": -11.20158,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.180",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.3625,
+            -11.40778
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E9C112",
+          "cod_base": "47E9C112",
+          "estacion": "ANTACOTO",
+          "categoria": "18",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "MARCAPOMACOCHA",
+          "entidad": "SED",
+          "longitud": -76.3625,
+          "altitud": 4484,
+          "latitud": -11.40778,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.181",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.83761,
+            -5.34602
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E067B6",
+          "cod_base": "47E067B6",
+          "estacion": "SALITRAL EHA",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "MORROPON",
+          "distrito": "SALITRAL",
+          "entidad": "ANA",
+          "longitud": -79.83761,
+          "altitud": 156,
+          "latitud": -5.34602,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.182",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -81.02038,
+            -4.87999
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0B1DE",
+          "cod_base": "47E0B1DE",
+          "estacion": "PUENTE SIMON RODRIGUEZ",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "PAITA",
+          "distrito": "AMOTAPE",
+          "entidad": "ANA",
+          "longitud": -81.02038,
+          "altitud": 12,
+          "latitud": -4.87999,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.183",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.11716,
+            -4.71357
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0E1A2",
+          "cod_base": "47E0E1A2",
+          "estacion": "CHIPILLICO",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "PIURA",
+          "distrito": "LAS LOMAS",
+          "entidad": "ANA",
+          "longitud": -80.11716,
+          "altitud": 340,
+          "latitud": -4.71357,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.184",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.16704,
+            -4.29905
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E9177A",
+          "cod_base": "47E9177A",
+          "estacion": "EL CIRUELO - ANA",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "AYABACA",
+          "distrito": "SUYO",
+          "entidad": "SEN",
+          "longitud": -80.16704,
+          "altitud": 243,
+          "latitud": -4.29905,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.185",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.62603,
+            -11.45481
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E9F488",
+          "cod_base": "47E9F488",
+          "estacion": "OBRAJILLO",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "CANTA",
+          "distrito": "SAN BUENAVENTURA",
+          "entidad": "SED",
+          "longitud": -76.62603,
+          "altitud": 2750,
+          "latitud": -11.45481,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.186",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.69759,
+            -5.45077
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472A571A",
+          "cod_base": "472A571A",
+          "estacion": "HUALLAPE",
+          "categoria": "18",
+          "departamento": "CAJAMARCA",
+          "provincia": "JAEN",
+          "distrito": "SANTA ROSA",
+          "entidad": "MEM",
+          "longitud": -78.69759,
+          "altitud": 409,
+          "latitud": -5.45077,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.187",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.15556,
+            -11.84056
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4726B574",
+          "cod_base": "4726B574",
+          "estacion": "YURACMAYO EDEGEL",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SAN MATEO",
+          "entidad": "EDEG",
+          "longitud": -76.15556,
+          "altitud": 4320,
+          "latitud": -11.84056,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.188",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.48348,
+            -16.0079
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "214400",
+          "cod_base": "214400",
+          "estacion": "HUATIAPA PSI",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "CASTILLA",
+          "distrito": "APLAO",
+          "entidad": "PSI1",
+          "longitud": -72.48348,
+          "altitud": 689,
+          "latitud": -16.0079,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.189",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.34703,
+            -4.93848
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0522C",
+          "cod_base": "47E0522C",
+          "estacion": "TAMBO GRANDE",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "PIURA",
+          "distrito": "TAMBO GRANDE",
+          "entidad": "ANA",
+          "longitud": -80.34703,
+          "altitud": 60,
+          "latitud": -4.93848,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.190",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.70694,
+            -7.57417
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0A2A8",
+          "cod_base": "47E0A2A8",
+          "estacion": "EL TAMBO",
+          "categoria": "22",
+          "departamento": "LA LIBERTAD",
+          "provincia": "GRAN CHIMU",
+          "distrito": "CASCAS",
+          "entidad": "SEN",
+          "longitud": -78.70694,
+          "altitud": 700,
+          "latitud": -7.57417,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.191",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.39014,
+            -4.48956
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E09732",
+          "cod_base": "47E09732",
+          "estacion": "LA ARDILLA",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "SULLANA",
+          "distrito": "LANCONES",
+          "entidad": "ANA",
+          "longitud": -80.39014,
+          "altitud": 116,
+          "latitud": -4.48956,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.192",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.9425,
+            -9.515
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230003",
+          "cod_base": "230003",
+          "estacion": "CHINCHAVITO",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "HUANUCO",
+          "distrito": "CHINCHAO",
+          "entidad": "SEN",
+          "longitud": -75.9425,
+          "altitud": 744,
+          "latitud": -9.515,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.193",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.9825,
+            -9.34694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472D1624",
+          "cod_base": "472D1624",
+          "estacion": "PUENTE PEREZ",
+          "categoria": "18",
+          "departamento": "HUANUCO",
+          "provincia": "LEONCIO PRADO",
+          "distrito": "MARIANO DAMASO BERAUN",
+          "entidad": "MEM",
+          "longitud": -75.9825,
+          "altitud": 644,
+          "latitud": -9.34694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.194",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.02778,
+            -9.32
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472DA5AA",
+          "cod_base": "472DA5AA",
+          "estacion": "PUENTE BELLA",
+          "categoria": "18",
+          "departamento": "HUANUCO",
+          "provincia": "LEONCIO PRADO",
+          "distrito": "RUPA-RUPA",
+          "entidad": "MEM",
+          "longitud": -76.02778,
+          "altitud": 663,
+          "latitud": -9.32,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.195",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.9825,
+            -9.34694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230001",
+          "cod_base": "230001",
+          "estacion": "PUENTE PEREZ",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "LEONCIO PRADO",
+          "distrito": "MARIANO DAMASO BERAUN",
+          "entidad": "SEN",
+          "longitud": -75.9825,
+          "altitud": 644,
+          "latitud": -9.34694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.196",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.39788,
+            -4.48047
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0D438",
+          "cod_base": "47E0D438",
+          "estacion": "ALAMOR",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "SULLANA",
+          "distrito": "LANCONES",
+          "entidad": "ANA",
+          "longitud": -80.39788,
+          "altitud": 116,
+          "latitud": -4.48047,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.197",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.81883,
+            -5.21814
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230603",
+          "cod_base": "230603",
+          "estacion": "LAGUNAS",
+          "categoria": "06",
+          "departamento": "LORETO",
+          "provincia": "ALTO AMAZONAS",
+          "distrito": "LAGUNAS",
+          "entidad": "SEN",
+          "longitud": -75.81883,
+          "altitud": 118,
+          "latitud": -5.21814,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.198",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.62592,
+            -16.08825
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472E112A",
+          "cod_base": "472E112A",
+          "estacion": "ILAVE",
+          "categoria": "22",
+          "departamento": "PUNO",
+          "provincia": "EL COLLAO",
+          "distrito": "ILAVE",
+          "entidad": "SEN",
+          "longitud": -69.62592,
+          "altitud": 3850,
+          "latitud": -16.08825,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.199",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.28658,
+            -11.74431
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E9D264",
+          "cod_base": "47E9D264",
+          "estacion": "TUNEL GRATHON",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SAN MATEO",
+          "entidad": "SED",
+          "longitud": -76.28658,
+          "altitud": 3203,
+          "latitud": -11.74431,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.200",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.32006,
+            -11.41256
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472BE66E",
+          "cod_base": "472BE66E",
+          "estacion": "PUENTE SALIDA MARCAPOMACOCHA",
+          "categoria": "18",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "MARCAPOMACOCHA",
+          "entidad": "SED",
+          "longitud": -76.32006,
+          "altitud": 4435,
+          "latitud": -11.41256,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.201",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.02778,
+            -9.32
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230004",
+          "cod_base": "230004",
+          "estacion": "PUENTE BELLA",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "LEONCIO PRADO",
+          "distrito": "RUPA-RUPA",
+          "entidad": "SEN",
+          "longitud": -76.02778,
+          "altitud": 663,
+          "latitud": -9.32,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.202",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.33118,
+            -11.40867
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E8C3E8",
+          "cod_base": "47E8C3E8",
+          "estacion": "MARCAPOMACOCHA - EDEGEL",
+          "categoria": "22",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "MARCAPOMACOCHA",
+          "entidad": "EDEG",
+          "longitud": -76.33118,
+          "altitud": 4482.6,
+          "latitud": -11.40867,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.203",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.52073,
+            -7.09094
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472210B6",
+          "cod_base": "472210B6",
+          "estacion": "RIO GRANDE GORE",
+          "categoria": "18",
+          "departamento": "CAJAMARCA",
+          "provincia": "CAJAMARCA",
+          "distrito": "LOS BAÑOS DEL INCA",
+          "entidad": "YANA",
+          "longitud": -78.52073,
+          "altitud": 2906,
+          "latitud": -7.09094,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.204",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.6775,
+            -15.74562
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472E8448",
+          "cod_base": "472E8448",
+          "estacion": "LAGUNILLAS",
+          "categoria": "22",
+          "departamento": "PUNO",
+          "provincia": "LAMPA",
+          "distrito": "SANTA LUCIA",
+          "entidad": "SEN",
+          "longitud": -70.6775,
+          "altitud": 4177,
+          "latitud": -15.74562,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.205",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.69208,
+            -5.75461
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472B607A",
+          "cod_base": "472B607A",
+          "estacion": "CORRAL QUEMADO",
+          "categoria": "18",
+          "departamento": "AMAZONAS",
+          "provincia": "UTCUBAMBA",
+          "distrito": "CUMBA",
+          "entidad": "MEM",
+          "longitud": -78.69208,
+          "altitud": 427,
+          "latitud": -5.75461,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.206",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.50556,
+            -8.18111
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E2E456",
+          "cod_base": "47E2E456",
+          "estacion": "TOCACHE",
+          "categoria": "22",
+          "departamento": "SAN MARTIN",
+          "provincia": "TOCACHE",
+          "distrito": "TOCACHE",
+          "entidad": "MEM",
+          "longitud": -76.50556,
+          "altitud": 446,
+          "latitud": -8.18111,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.207",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.73694,
+            -7.26861
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212600",
+          "cod_base": "212600",
+          "estacion": "HUAYABAMBA",
+          "categoria": "18",
+          "departamento": "SAN MARTIN",
+          "provincia": "MARISCAL CACERES",
+          "distrito": "JUANJUI",
+          "entidad": "MEM",
+          "longitud": -76.73694,
+          "altitud": 280,
+          "latitud": -7.26861,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.208",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.35011,
+            -11.57056
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472542FE",
+          "cod_base": "472542FE",
+          "estacion": "MILLOC EDEGEL",
+          "categoria": "22",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "CARAMPOMA",
+          "entidad": "EDEG",
+          "longitud": -76.35011,
+          "altitud": 4377,
+          "latitud": -11.57056,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.209",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.45456,
+            -17.63312
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1A052",
+          "cod_base": "47E1A052",
+          "estacion": "CORUCA",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "INCLAN",
+          "entidad": "ANA",
+          "longitud": -70.45456,
+          "altitud": 834,
+          "latitud": -17.63312,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.210",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.0162,
+            -5.07954
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E08444",
+          "cod_base": "47E08444",
+          "estacion": "SAN PEDRO",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "MORROPON",
+          "distrito": "MORROPON",
+          "entidad": "ANA",
+          "longitud": -80.0162,
+          "altitud": 240,
+          "latitud": -5.07954,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.211",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.38294,
+            -11.342
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E9E7FE",
+          "cod_base": "47E9E7FE",
+          "estacion": "PATAHUAY SAPICANCHA",
+          "categoria": "18",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "MARCAPOMACOCHA",
+          "entidad": "SED",
+          "longitud": -76.38294,
+          "altitud": 4550,
+          "latitud": -11.342,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.212",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.15111,
+            -9.84694
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "230002",
+          "cod_base": "230002",
+          "estacion": "TARUCA",
+          "categoria": "06",
+          "departamento": "HUANUCO",
+          "provincia": "HUANUCO",
+          "distrito": "CHURUBAMBA",
+          "entidad": "SEN",
+          "longitud": -76.15111,
+          "altitud": 408,
+          "latitud": -9.84694,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.213",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.58556,
+            -3.63056
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210001",
+          "cod_base": "210001",
+          "estacion": "LA CAPILLA PSI",
+          "categoria": "18",
+          "departamento": "TUMBES",
+          "provincia": "TUMBES",
+          "distrito": "LA CRUZ",
+          "entidad": "PSI2",
+          "longitud": -80.58556,
+          "altitud": 4,
+          "latitud": -3.63056,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.214",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.11317,
+            -7.46335
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472A32FC",
+          "cod_base": "472A32FC",
+          "estacion": "CRISNEJAS",
+          "categoria": "18",
+          "departamento": "CAJAMARCA",
+          "provincia": "CAJABAMBA",
+          "distrito": "CONDEBAMBA",
+          "entidad": "MEM",
+          "longitud": -78.11317,
+          "altitud": 1996,
+          "latitud": -7.46335,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.215",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.66413,
+            -5.94135
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472B3006",
+          "cod_base": "472B3006",
+          "estacion": "CUMBA",
+          "categoria": "18",
+          "departamento": "CAJAMARCA",
+          "provincia": "CUTERVO",
+          "distrito": "TORIBIO CASANOVA",
+          "entidad": "MEM",
+          "longitud": -78.66413,
+          "altitud": 449,
+          "latitud": -5.94135,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.216",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.9425,
+            -9.515
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472D0552",
+          "cod_base": "472D0552",
+          "estacion": "CHINCHAVITO",
+          "categoria": "18",
+          "departamento": "HUANUCO",
+          "provincia": "HUANUCO",
+          "distrito": "CHINCHAO",
+          "entidad": "MEM",
+          "longitud": -75.9425,
+          "altitud": 744,
+          "latitud": -9.515,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.217",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.76485,
+            -17.53886
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E113DC",
+          "cod_base": "47E113DC",
+          "estacion": "REPRESA PAUCARANI",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "PALCA",
+          "entidad": "ANA",
+          "longitud": -69.76485,
+          "altitud": 4587,
+          "latitud": -17.53886,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.218",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.91656,
+            -17.69071
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E143A0",
+          "cod_base": "47E143A0",
+          "estacion": "CAPLINA",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TACNA",
+          "distrito": "PACHIA",
+          "entidad": "ANA",
+          "longitud": -69.91656,
+          "altitud": 3561,
+          "latitud": -17.69071,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.219",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.72056,
+            -16.25944
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E27134",
+          "cod_base": "47E27134",
+          "estacion": "SOCOSANI",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "YURA",
+          "entidad": "ANA",
+          "longitud": -71.72056,
+          "altitud": 2325,
+          "latitud": -16.25944,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.220",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.57431,
+            -16.45992
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472EE1AE",
+          "cod_base": "472EE1AE",
+          "estacion": "TINGO GRANDE",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "JACOBO HUNTER",
+          "entidad": "ANA",
+          "longitud": -71.57431,
+          "altitud": 2196,
+          "latitud": -16.45992,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.221",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.76952,
+            -11.38887
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E244AE",
+          "cod_base": "47E244AE",
+          "estacion": "CALLANCA",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUARAL",
+          "distrito": "SUMBILCA",
+          "entidad": "ANA",
+          "longitud": -76.76952,
+          "altitud": 2641,
+          "latitud": -11.38887,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.222",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.62455,
+            -11.13916
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E257D8",
+          "cod_base": "47E257D8",
+          "estacion": "VICHAYCOCHA",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUARAL",
+          "distrito": "PACARAOS",
+          "entidad": "ANA",
+          "longitud": -76.62455,
+          "altitud": 3533,
+          "latitud": -11.13916,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.223",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.46667,
+            -11.16528
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472BC082",
+          "cod_base": "472BC082",
+          "estacion": "ANDACANCHA",
+          "categoria": "18",
+          "departamento": "JUNIN",
+          "provincia": "YAULI",
+          "distrito": "SANTA BARBARA DE CARHUACAYAN",
+          "entidad": "SED",
+          "longitud": -76.46667,
+          "altitud": 4620,
+          "latitud": -11.16528,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.224",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.38012,
+            -7.79636
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472E74CC",
+          "cod_base": "472E74CC",
+          "estacion": "PUENTE COINA",
+          "categoria": "22",
+          "departamento": "LA LIBERTAD",
+          "provincia": "OTUZCO",
+          "distrito": "USQUIL",
+          "entidad": "SEN",
+          "longitud": -78.38012,
+          "altitud": 1812,
+          "latitud": -7.79636,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.225",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.09909,
+            -7.25592
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4726E508",
+          "cod_base": "4726E508",
+          "estacion": "YONAN GORE",
+          "categoria": "18",
+          "departamento": "CAJAMARCA",
+          "provincia": "CONTUMAZA",
+          "distrito": "YONAN",
+          "entidad": "GCAJ",
+          "longitud": -79.09909,
+          "altitud": 454,
+          "latitud": -7.25592,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.226",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.30828,
+            -17.37072
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E12646",
+          "cod_base": "47E12646",
+          "estacion": "LAGUNA ARICOTA",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "CANDARAVE",
+          "distrito": "CURIBAYA",
+          "entidad": "ANA",
+          "longitud": -70.30828,
+          "altitud": 2788,
+          "latitud": -17.37072,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.227",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.17213,
+            -17.47491
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E150D6",
+          "cod_base": "47E150D6",
+          "estacion": "PUENTE TALAPALCA",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TARATA",
+          "distrito": "CHUCATAMANI",
+          "entidad": "ANA",
+          "longitud": -70.17213,
+          "altitud": 2177,
+          "latitud": -17.47491,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.228",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.74496,
+            -13.65773
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "213403",
+          "cod_base": "213403",
+          "estacion": "LETRAYOC PSI",
+          "categoria": "18",
+          "departamento": "ICA",
+          "provincia": "PISCO",
+          "distrito": "HUANCANO",
+          "entidad": "PSI1",
+          "longitud": -75.74496,
+          "altitud": 682,
+          "latitud": -13.65773,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.229",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.67507,
+            -16.42665
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "4722E032",
+          "cod_base": "4722E032",
+          "estacion": "PUENTE DEL DIABLO PSI",
+          "categoria": "18",
+          "departamento": "AREQUIPA",
+          "provincia": "AREQUIPA",
+          "distrito": "UCHUMAYO",
+          "entidad": "ANA",
+          "longitud": -71.67507,
+          "altitud": 1961,
+          "latitud": -16.42665,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.230",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.02833,
+            -11.37
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E214D2",
+          "cod_base": "47E214D2",
+          "estacion": "SANTO DOMINGO",
+          "categoria": "22",
+          "departamento": "LIMA",
+          "provincia": "HUARAL",
+          "distrito": "HUARAL",
+          "entidad": "ANA",
+          "longitud": -77.02833,
+          "altitud": 620,
+          "latitud": -11.37,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.231",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.65701,
+            -11.22343
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E22148",
+          "cod_base": "47E22148",
+          "estacion": "PUENTE CALLANTAMA",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUARAL",
+          "distrito": "ATAVILLOS BAJO",
+          "entidad": "ANA",
+          "longitud": -76.65701,
+          "altitud": 2773,
+          "latitud": -11.22343,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.232",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.4609,
+            -3.5709
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E024BC",
+          "cod_base": "47E024BC",
+          "estacion": "PUENTE TUMBES",
+          "categoria": "18",
+          "departamento": "TUMBES",
+          "provincia": "TUMBES",
+          "distrito": "TUMBES",
+          "entidad": "ANA",
+          "longitud": -80.4609,
+          "altitud": 10,
+          "latitud": -3.5709,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.233",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.81051,
+            -7.54919
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472E5220",
+          "cod_base": "472E5220",
+          "estacion": "PUENTE PALMIRA",
+          "categoria": "22",
+          "departamento": "LA LIBERTAD",
+          "provincia": "GRAN CHIMU",
+          "distrito": "CASCAS",
+          "entidad": "SEN",
+          "longitud": -78.81051,
+          "altitud": 647,
+          "latitud": -7.54919,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.234",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.17296,
+            -5.1128
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E0415A",
+          "cod_base": "47E0415A",
+          "estacion": "PUENTE ÑACARA",
+          "categoria": "18",
+          "departamento": "PIURA",
+          "provincia": "MORROPON",
+          "distrito": "CHULUCANAS",
+          "entidad": "SEN",
+          "longitud": -80.17296,
+          "altitud": 91,
+          "latitud": -5.1128,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.235",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.66664,
+            -11.92
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472E24B0",
+          "cod_base": "472E24B0",
+          "estacion": "SANTA EULALIA",
+          "categoria": "22",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SANTA EULALIA",
+          "entidad": "SEN",
+          "longitud": -76.66664,
+          "altitud": 970,
+          "latitud": -11.92,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.236",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.25,
+            -9.16667
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "211601",
+          "cod_base": "211601",
+          "estacion": "SAN JACINTO PSI",
+          "categoria": "18",
+          "departamento": "ANCASH",
+          "provincia": "SANTA",
+          "distrito": "NEPEÑA",
+          "entidad": "PSI2",
+          "longitud": -78.25,
+          "altitud": 430,
+          "latitud": -9.16667,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.237",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.6333,
+            -12.0333
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212700",
+          "cod_base": "212700",
+          "estacion": "PTE ANTAPUCRO PSI",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "ANTIOQUIA",
+          "entidad": "PSI2",
+          "longitud": -76.6333,
+          "altitud": 1036,
+          "latitud": -12.0333,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.238",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -77.46789,
+            -10.90961
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212200",
+          "cod_base": "212200",
+          "estacion": "CARAL LAS MINAS PSI",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "BARRANCA",
+          "distrito": "SUPE",
+          "entidad": "PSI2",
+          "longitud": -77.46789,
+          "altitud": 463,
+          "latitud": -10.90961,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.239",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.16667,
+            -8.3833
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210002",
+          "cod_base": "210002",
+          "estacion": "HUACAPONGO PSI",
+          "categoria": "18",
+          "departamento": "LA LIBERTAD",
+          "provincia": "VIRU",
+          "distrito": "VIRU",
+          "entidad": "PSI2",
+          "longitud": -78.16667,
+          "altitud": 358,
+          "latitud": -8.3833,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.240",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -70.94221,
+            -17.17208
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210004",
+          "cod_base": "210004",
+          "estacion": "HUARACANE",
+          "categoria": "18",
+          "departamento": "MOQUEGUA",
+          "provincia": "MARISCAL NIETO",
+          "distrito": "TORATA",
+          "entidad": "CON",
+          "longitud": -70.94221,
+          "altitud": 1380,
+          "latitud": -17.17208,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.241",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.60001,
+            -6.41291
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210006",
+          "cod_base": "210006",
+          "estacion": "SHANAO",
+          "categoria": "18",
+          "departamento": "SAN MARTIN",
+          "provincia": "LAMAS",
+          "distrito": "SHANAO",
+          "entidad": "SEN",
+          "longitud": -76.60001,
+          "altitud": 279,
+          "latitud": -6.41291,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.242",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.57525,
+            -13.56213
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472C44A2",
+          "cod_base": "472C44A2",
+          "estacion": "PUENTE CUNYA",
+          "categoria": "18",
+          "departamento": "APURIMAC",
+          "provincia": "ABANCAY",
+          "distrito": "CURAHUASI",
+          "entidad": "SEN",
+          "longitud": -72.57525,
+          "altitud": 1912,
+          "latitud": -13.56213,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.243",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.59741,
+            -13.3177
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210007",
+          "cod_base": "210007",
+          "estacion": "PAUCARTAMBO",
+          "categoria": "18",
+          "departamento": "CUSCO",
+          "provincia": "PAUCARTAMBO",
+          "distrito": "PAUCARTAMBO",
+          "entidad": "SEN",
+          "longitud": -71.59741,
+          "altitud": 2953,
+          "latitud": -13.3177,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.244",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.7367,
+            -10.92164
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "110139",
+          "cod_base": "110139",
+          "estacion": "PICOY",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAURA",
+          "distrito": "SANTA LEONOR",
+          "entidad": "SEN",
+          "longitud": -76.7367,
+          "altitud": 2903,
+          "latitud": -10.92164,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.245",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.27136,
+            -6.61515
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1D6C2",
+          "cod_base": "47E1D6C2",
+          "estacion": "PUENTE SAN CARLOS",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "CHOTA",
+          "distrito": "LLAMA",
+          "entidad": "ANA",
+          "longitud": -79.27136,
+          "altitud": 334,
+          "latitud": -6.61515,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.246",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.91262,
+            -6.58271
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1E358",
+          "cod_base": "47E1E358",
+          "estacion": "PUENTE AMBAN",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "SANTA CRUZ",
+          "distrito": "CHANCAYBAÑOS",
+          "entidad": "ANA",
+          "longitud": -78.91262,
+          "altitud": 1532,
+          "latitud": -6.58271,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.247",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.07395,
+            -6.65579
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E1C5B4",
+          "cod_base": "47E1C5B4",
+          "estacion": "CIRATO CAÑAD",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "SANTA CRUZ",
+          "distrito": "CATACHE",
+          "entidad": "ANA",
+          "longitud": -79.07395,
+          "altitud": 964,
+          "latitud": -6.65579,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.248",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.86667,
+            -8.0833
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "211102",
+          "cod_base": "211102",
+          "estacion": "QUIRIHUAC PSI",
+          "categoria": "18",
+          "departamento": "LA LIBERTAD",
+          "provincia": "TRUJILLO",
+          "distrito": "LAREDO",
+          "entidad": "PSI2",
+          "longitud": -78.86667,
+          "altitud": 177,
+          "latitud": -8.0833,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.249",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.69589,
+            -11.93814
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212603",
+          "cod_base": "212603",
+          "estacion": "BOCATOMA HUAMPANI",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "LIMA",
+          "distrito": "LURIGANCHO",
+          "entidad": "SED",
+          "longitud": -76.69589,
+          "altitud": 868,
+          "latitud": -11.93814,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.250",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.21467,
+            -15.14308
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "210003",
+          "cod_base": "210003",
+          "estacion": "HUANCASAYA",
+          "categoria": "22",
+          "departamento": "PUNO",
+          "provincia": "HUANCANE",
+          "distrito": "COJATA",
+          "entidad": "SEN",
+          "longitud": -69.21467,
+          "altitud": 4238,
+          "latitud": -15.14308,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.251",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -78.81392,
+            -6.74456
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "47E207A4",
+          "cod_base": "47E207A4",
+          "estacion": "TONGOD",
+          "categoria": "22",
+          "departamento": "CAJAMARCA",
+          "provincia": "SAN MIGUEL",
+          "distrito": "TONGOD",
+          "entidad": "ANA",
+          "longitud": -78.81392,
+          "altitud": 2488,
+          "latitud": -6.74456,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.252",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.34056,
+            -13.2235
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "472A9204",
+          "cod_base": "472A9204",
+          "estacion": "CHILCA",
+          "categoria": "18",
+          "departamento": "CUSCO",
+          "provincia": "URUBAMBA",
+          "distrito": "MACHUPICCHU",
+          "entidad": "SEN",
+          "longitud": -72.34056,
+          "altitud": 2475,
+          "latitud": -13.2235,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.253",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.2319,
+            -14.16991
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250308",
+          "cod_base": "250308",
+          "estacion": "SALCCA",
+          "categoria": "06",
+          "departamento": "CUSCO",
+          "provincia": "CANCHIS",
+          "distrito": "SAN PABLO",
+          "entidad": "SEN",
+          "longitud": -71.2319,
+          "altitud": 3918,
+          "latitud": -14.16991,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.254",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.25961,
+            -11.73447
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212604",
+          "cod_base": "212604",
+          "estacion": "RIO BLANCO",
+          "categoria": "22",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "CHICLA",
+          "entidad": "SEN",
+          "longitud": -76.25961,
+          "altitud": 3600,
+          "latitud": -11.73447,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.255",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.30111,
+            -11.76012
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212605",
+          "cod_base": "212605",
+          "estacion": "SAN MATEO",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "HUAROCHIRI",
+          "distrito": "SAN MATEO",
+          "entidad": "SEN",
+          "longitud": -76.30111,
+          "altitud": 3156,
+          "latitud": -11.76012,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.256",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.82737,
+            -13.43493
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "250900",
+          "cod_base": "250900",
+          "estacion": "PUENTE PAMPAS",
+          "categoria": "18",
+          "departamento": "APURIMAC",
+          "provincia": "CHINCHEROS",
+          "distrito": "HUACCANA",
+          "entidad": "SEN",
+          "longitud": -73.82737,
+          "altitud": 1985,
+          "latitud": -13.43493,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.257",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -76.99766,
+            -11.80778
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "212500",
+          "cod_base": "212500",
+          "estacion": "AGUA AZUL BOCATOMA",
+          "categoria": "18",
+          "departamento": "LIMA",
+          "provincia": "LIMA",
+          "distrito": "CARABAYLLO",
+          "entidad": "SEN",
+          "longitud": -76.99766,
+          "altitud": 339,
+          "latitud": -11.80778,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.258",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.58928,
+            -13.84358
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "213503",
+          "cod_base": "213503",
+          "estacion": "HUAMANI EL TAMBO GORE",
+          "categoria": "22",
+          "departamento": "ICA",
+          "provincia": "ICA",
+          "distrito": "SAN JOSE DE LOS MOLINOS",
+          "entidad": "SEN",
+          "longitud": -75.58928,
+          "altitud": 883,
+          "latitud": -13.84358,
+          "condicion": "F"
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "99_01_002_03_001_000_0000_00_00.259",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -69.93917,
+            -17.19972
+          ]
+        },
+        "geometry_name": "geom",
+        "properties": {
+          "codigo": "117059",
+          "cod_base": "117059",
+          "estacion": "ANCOAQUE",
+          "categoria": "18",
+          "departamento": "TACNA",
+          "provincia": "TARATA",
+          "distrito": "SUSAPAYA",
+          "entidad": "ANA",
+          "longitud": -69.93917,
+          "altitud": 4395,
+          "latitud": -17.19972,
+          "condicion": "F"
+        }
+      }
+    ],
+    "crs": {
+      "type": "name",
+      "properties": {
+        "name": "urn:ogc:def:crs:EPSG::4326"
+      }
+    }
+  }
+}

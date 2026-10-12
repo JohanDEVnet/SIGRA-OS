@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250" role="img" aria-labelledby="title desc">
+  <title id="title">Laguna de montaña: ilustración de referencia</title>
+  <desc id="desc">Dibujo general de una laguna rodeada por relieve de montaña y una cumbre nevada. No representa una laguna específica ni su condición actual.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#f7f7f0"/><stop offset="1" stop-color="#e9efe1"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#a9c8c9"/><stop offset="1" stop-color="#719ba5"/></linearGradient>
+    <clipPath id="frame"><rect width="400" height="250" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="400" height="250" fill="url(#sky)"/>
+    <circle cx="341" cy="55" r="18" fill="#eadfbf" opacity=".65"/>
+    <path d="m-15 157 74-68 45 33 72-67 72 72 37-47 130 83v87H-15Z" fill="#cbd5bd"/>
+    <path d="m100 147 76-92 62 92Z" fill="#9cad8b"/>
+    <path d="m140 98 36-43 30 36-22-6-8 10-11-9-12 12Z" fill="#f7f7f0"/>
+    <path d="m236 150 49-70 80 70Z" fill="#adbaa0"/>
+    <path d="m-12 180 89-69 45 46 49-24 55 34 65-40 124 55v68H-12Z" fill="#829573"/>
+    <path d="M0 171c56-12 78-12 117 12 45 27 92 2 125-6 67-17 90-19 158 2v71H0Z" fill="#e1dcc8"/>
+    <path d="M-7 208c70-27 79-17 107 0 44 26 124-10 157-13 57-6 89 11 150 27v28H-7Z" fill="#d1d5bb"/>
+    <path d="M107 185c21-16 52-28 82-28 28 0 59 8 79 24 15 13 7 24-21 28-25 4-96 6-128-1-30-6-28-15-12-23Z" fill="url(#water)" stroke="#769aa0" stroke-width="1.2"/>
+    <g fill="none" stroke="#d8e7e3" stroke-width="1.5" stroke-linecap="round">
+      <path d="M149 176c19-5 37-4 49-1m12 5 25 1M124 194c19 4 35 5 53 4m13-10h40m-32 15h35"/>
+    </g>
+    <path d="m47 179 9-24 9 24m-9-15v24m12-8 8-20 8 20m-8-11v16" fill="none" stroke="#6d855d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <g font-family="Arial,sans-serif" fill="#183e34">
+      <text x="22" y="30" font-size="18">Laguna de montaña</text>
+      <text x="269" y="185" font-size="14">Agua</text>
+      <text x="25" y="79" font-size="14">Cumbre nevada</text>
+      <text x="22" y="232" font-size="14" fill="#718466">Ilustración de referencia</text>
+    </g>
+    <g fill="none" stroke="#839778" stroke-width="1" stroke-linecap="round">
+      <path d="M116 83h17l24 11M259 182h-19"/>
+    </g>
+    <circle cx="157" cy="94" r="2" fill="#839778"/>
+    <circle cx="240" cy="182" r="2" fill="#5b8591"/>
+  </g>
+</svg>

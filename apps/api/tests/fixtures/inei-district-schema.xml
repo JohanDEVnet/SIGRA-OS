@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:Interoperabilidad="https://geospacisal.inei.gob.pe/geoserver/web/interoperabilidad" xmlns:gml="http://www.opengis.net/gml" elementFormDefault="qualified" targetNamespace="https://geospacisal.inei.gob.pe/geoserver/web/interoperabilidad">
+  <xsd:import namespace="http://www.opengis.net/gml" schemaLocation="https://geoespacial.inei.gob.pe/geoserver/schemas/gml/2.1.2/feature.xsd"/>
+  <xsd:complexType name="ig_distritoType">
+    <xsd:complexContent>
+      <xsd:extension base="gml:AbstractFeatureType">
+        <xsd:sequence>
+          <xsd:element maxOccurs="1" minOccurs="0" name="geom" nillable="true" type="gml:MultiPolygonPropertyType"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fid" nillable="true" type="xsd:long"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="objectid" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ccdd" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ccpp" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ccdi" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ubigeo" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="nombdist" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fuente" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="periodo" nillable="true" type="xsd:int"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ccdd_c" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ccpp_c" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="ccdi_c" nillable="true" type="xsd:string"/>
+          <xsd:element maxOccurs="1" minOccurs="0" name="fec_reg" nillable="true" type="xsd:dateTime"/>
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ig_distrito" substitutionGroup="gml:_Feature" type="Interoperabilidad:ig_distritoType"/>
+</xsd:schema>
+

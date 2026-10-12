@@ -1,0 +1,50 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { test } from 'node:test';
+import 'reflect-metadata';
+import { NestFactory } from '@nestjs/core';
+import { AppModule } from '../src/app.module.js';
+import { AppController } from '../src/app.controller.js';
+import { LocalitiesAdapter, localityQueryUrl, polygonCentroid } from '../src/localities.js';
+import { parseDistricts } from '../src/geography.js';
+import { PublicProviders } from '../src/providers.js';
+import { ProviderTransport } from '../src/transport.js';
+const read = (name: string) => JSON.parse(readFileSync(new URL(`./fixtures/${name}-real.json`, import.meta.url), 'utf8').replace(/^\uFEFF/, ''));
+test('búsqueda INEI real conserva distrito, calcula centroide y limita resultados sin inventar capital', async () => {
+  const fixture = read('district-search');
+  const response = await new LocalitiesAdapter(new ProviderTransport(async () => new Response(JSON.stringify(fixture)))).search('Huaraz');
+  assert.equal(response.data.length, 1); assert.equal(response.data[0].ubigeo, '020101'); assert.equal(response.data[0].district, 'HUARAZ');
+  assert.equal(response.data[0].province, null); assert.equal(response.data[0].coordinateMethod, 'polygon_centroid');
+  assert.ok(response.data[0].lat < -9 && response.data[0].lat > -10); assert.ok(response.data[0].lon < -77 && response.data[0].lon > -78);
+  assert.equal(response.meta.dateOfData, null); assert.equal(response.meta.hasMore, false);
+  const limited = await new LocalitiesAdapter(new ProviderTransport(async () => new Response(JSON.stringify({ ...fixture, totalFeatures: 99 })))).search('Huaraz', 1);
+  assert.equal(limited.data.length, 1); assert.equal(limited.meta.hasMore, true);
+});
+test('filtro OGC escapa XML, limita consultas y no usa CQL bloqueado', () => {
+  const query = new URL(localityQueryUrl("San D'Áncash", 12));
+  assert.equal(query.searchParams.get('maxFeatures'), '13'); assert.equal(query.searchParams.get('CQL_FILTER'), null);
+  assert.match(query.searchParams.get('FILTER')!, /D&apos;ÁNCASH/); assert.match(query.searchParams.get('FILTER')!, /D&apos;ANCASH/);
+  assert.throws(() => localityQueryUrl('*', 10)); assert.throws(() => localityQueryUrl('Huaraz', 100));
+  assert.match(new URL(localityQueryUrl('020101', 10)).searchParams.get('FILTER')!, /PropertyIsEqualTo/);
+});
+test('centroide incluye geometría real completa y rechaza superficie degenerada', () => {
+  const [district] = parseDistricts(read('district-search')).data;
+  assert.ok(polygonCentroid(district).every(Number.isFinite));
+  assert.throws(() => polygonCentroid({ ubigeo: '020101', district: 'HUARAZ', polygons: [[[[0,0],[0,0],[0,0],[0,0]]]] }));
+});
+test('HTTP: búsqueda validada, ID exacto fuera de ventana y404 real', async context => {
+  const app = await NestFactory.create(AppModule, { logger: false });
+  (app.get(AppController) as unknown as { providers: PublicProviders }).providers = new PublicProviders(async url => new Response(JSON.stringify(String(url).includes('ultimo-sismo') ? String(url).endsWith('/2025') ? read('igp-historical').records : read('igp').records : read('district-search'))), Date.now, undefined, { retries: 0, persistentStore: null });
+  app.setGlobalPrefix('api/v1'); await app.listen(0, '127.0.0.1'); context.after(() => app.close());
+  const base = `${await app.getUrl()}/api/v1`;
+  const response = await fetch(`${base}/localidades?q=Huaraz`); assert.equal(response.status, 200);
+  assert.equal((await response.json()).data[0].ubigeo, '020101');
+  for (const query of ['', '?q=H', '?q=Huaraz&q=Lima', '?q=%3Cscript%3E', '?q=Huaraz&limite=x']) assert.equal((await fetch(`${base}/localidades${query}`)).status, 400, query);
+  assert.equal((await fetch(`${base}/localidades?q=Huaraz&limite=13`)).status, 422);
+  const events = await (await fetch(`${base}/sismos?dias=1&mag_min=0`)).json();
+  const oldest = read('igp-historical').records[0].codigo;
+  assert.equal(events.data.some((event: {id: string}) => event.id === oldest), false);
+  const exact = await fetch(`${base}/sismos/${oldest}`); assert.equal(exact.status, 200); assert.equal((await exact.json()).data.id, oldest);
+  assert.equal((await fetch(`${base}/sismos/2026-9999`)).status, 404); assert.equal((await fetch(`${base}/sismos/x`)).status, 400); assert.equal((await fetch(`${base}/sismos/2009-0001`)).status, 422);
+  const health = await (await fetch(`${base}/health`)).json(); assert.equal(health.data.persistence.configured, false); assert.equal(health.data.persistence.status, 'disabled');
+});

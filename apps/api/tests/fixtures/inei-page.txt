@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>INEI</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/8ad784097e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="fondo">
+            <div class="container">
+                <div class="header-container">
+                    <div class="texto">
+                        <div class="header-container-logos">
+                            <a href="https://www.inei.gob.pe/"><img src="assets/img/header/inei-color.png" alt=""></a>
+                        
+                            <img src="assets/img/header/cm-header.png" alt="">
+                        </div>
+                        <h1>PORTAL DE <br>
+                            INFRAESTRUCTURA DE <br>
+                            <span style="color: #02349C; font-weight: 800;">DATOS ESPACIALES INEI</span></h1>
+                        <p>
+                            El presente geoportal tiene como objetivo promover el uso y diseminación de la información geoespacial relevante, para la planificación, el desarrollo sostenible y el impulso de las Infraestructuras de Datos Espaciales. Ofrecemos a nuestros usuarios el acceso a aplicaciones y servicios para encontrar, compartir, procesar y utilizar de manera gratuita e interactiva la información.
+                        </p>
+                    </div>
+                    <div class="mapa">
+                        <img src="assets/img/header/mapa.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="container">
+                    <div class="nav-container">
+                        <div class="seccion">
+                            <a href="#servicios">
+                                <img src="assets/img/header/servicios.png" alt="">
+                                <p>SERVICIOS WMS & SERVICIOS WFS</p>
+                            </a>
+                        </div>
+                        <div class="seccion">
+                            <a href="#metadatos">
+                                <img src="assets/img/header/metadatos.png" alt="">
+                                <p>CATALOGO DE METADATOS</p>
+                            </a>
+                        </div>
+                        <div class="seccion">
+                            <a href="#normas">
+                                <img src="assets/img/header/normas.png" alt="">
+                                <p>NORMAS TÉCNICAS</p>
+                            </a>
+                        </div>
+                        <div class="seccion">
+                            <a href="#capas">
+                                <img src="assets/img/header/carto.png" alt="">
+                                <p>DESCARGA DE CAPAS CARTOGRÁFICAS</p>
+                            </a>
+                            
+                        </div>
+                        <div class="seccion">
+                            <a href="#geo">
+                                <img src="assets/img/header/geo.png" alt="">
+                                <p>GEODATOS PERÚ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="consulta">
+                <div class="container">
+                    <div class="consulta-container">
+                        <div class="consultas">
+                            <div class="info-consulta">
+                                <h2>Sistemas GIS de consulta del INEI</h2>
+                            </div>
+                            <div class="gis">
+                                <a href="http://datacrim.inei.gob.pe/"><img src="assets/img/gis/datacrim.png" alt=""></a>
+                                <a href="https://agua.inei.gob.pe/"><img src="assets/img/gis/abastecimiento.png" alt=""></a>
+                                <a href="https://planoestratificado.inei.gob.pe"><img src="assets/img/gis/planos.png" alt=""></a>
+                                <a href="http://webinei.inei.gob.pe/nino/"><img src="assets/img/gis/fenomeno.png" alt=""></a>
+                                <a href="http://sige.inei.gob.pe/test/atlas/ "><img src="assets/img/gis/centroposblado.png" alt=""></a>
+                                <a href="https://sdmr.inei.gob.pe/"><img src="assets/img/gis/micro.png" alt=""></a>
+                                <a href="https://systems.inei.gob.pe/SIRTOD/"><img src="assets/img/gis/sirtod.png" alt=""></a>                               
+                                <a href="http://sige.inei.gob.pe/sige/"><img src="assets/img/gis/sige.png" alt=""></a>
+                                <a href="http://atlas.inei.gob.pe/tambos_inei/"><img src="assets/img/gis/estadistica.png" alt=""></a>
+                                <a href="https://estadist.inei.gob.pe/"><img src="assets/img/gis/estadist.png" alt=""></a>
+                               
+                            </div>
+                            <div class="laptop">
+                                <img src="assets/img/gis/laptop.png" alt="" style="width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </header>
+    <main>
+        <div class="nav1" id="nav1">
+            <div class="container">
+                <div class="nav-container">
+                    <div class="logos-ventana">
+                        <img src="assets/img/footer/inei.png" alt="" style="width: 100px;">
+                        <img src="assets/img/header/cm-header.png" alt="" style="width: 150px;">
+                    </div>
+                    <div class="ventana">
+                        <div class="seccion1">
+                            <a href="#servicios">
+                                <img src="assets/img/header/servicios-blanco.png" alt="">
+                                <p>SERVICIOS WMS & SERVICIOS WFS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#metadatos">
+                                <img src="assets/img/header/metadatos-blanco.png" alt="">
+                                <p>CATALOGO DE METADATOS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#normas">
+                                <img src="assets/img/header/normas-blanco.png" alt="">
+                                <p>NORMAS TÉCNICAS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#capas">
+                                <img src="assets/img/header/carto-blanco.png" alt="">
+                                <p>DESCARGA DE CAPAS CARTOGRÁFICAS</p>
+                            </a>
+                        </div>
+                        <div class="seccion1">
+                            <a href="#geo">
+                                <img src="assets/img/header/geo-blanco.png" alt="">
+                                <p>GEODATOS PERÚ</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="servicios">
+            <div class="container">
+                <div class="servicio-container">
+                    <div class="servicios">
+                        <div class="tabla-servicio">
+                            <div class="servicio-titulo">
+                                <img src="assets/img/servicios/icono.png" alt="">
+                                <h2>SERVICIOS WMS & SERVICIOS WFS</h2>
+                            </div>
+                            <p>El servicio Web Map Service (WMS) o Servicio de publicación de mapas es un estándar propuesto por la OGC que ofrece una sencilla interfaz HTTP, el cual permite realizar una solicitud de imágenes de mapas georreferenciados de una o más bases de datos geográficas que pueden estar distribuidas en más de un servidor</p>
+                            <table>
+                                <tr class="cabecera">
+                                    <td class="cat">CATEGORÍA</td>
+                                    <td></td>
+                                    <td>NOMBRE</td>
+                                </tr>
+                                <tbody class="body">
+                                    <tr>
+                                        <td rowspan="36" class="cat1"><p>Límites</p></td> <!--esta linea me ayuda a modificar el tamaño de limites-->
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Departamental</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_departamento&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers', 'WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><a class="point
+                                            
+                                            662222er" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Interoperabilidad%3Aig_departamento&maxFeatures=50&outputFormat=application%2Fjson','WFS')"><p class="extra">WFS</p></a></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Provincial</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_provincia&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Interoperabilidad%3Aig_provincia&maxFeatures=50&outputFormat=application%2Fjson','WFS')"><p class="extra">WFS</p></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Distrital</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_distrito&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Interoperabilidad%3Aig_distrito&maxFeatures=50&outputFormat=application%2Fjson','WFS')"><p class="extra">WFS</p></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p>Centro poblado</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_centropoblado&bbox=-81.3058853149414%2C-18.3344993591309%2C-68.6593322753906%2C-0.095669999718666&width=532&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>&nbsp;</td> -->
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Manzana</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_manzana&bbox=-81.3126068115234%2C-18.2902717590332%2C-68.8450088500977%2C-0.370996952056885&width=534&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                    <td class="lines"><p class="extra">&nbsp;</p></td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <!--<td>&nbsp;</td>-->
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Casco urbano</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_casco_urbano&bbox=-81.313606262207%2C-18.2907619476318%2C-68.8447723388672%2C-0.370625346899033&width=534&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>        
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total <br>departamental</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pob_total_dep&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td>
+                                    </tr>  
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total <br>provincial</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_prov&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>  
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total <br>distrital</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_dist&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población electoral</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobelectoral&bbox=-81.3124008178711%2C-18.2902717590332%2C-68.8450088500977%2C-0.370996952056885&width=534&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población NBI</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobnbi&bbox=-81.3124008178711%2C-18.2902717590332%2C-68.8450088500977%2C-0.370996952056885&width=534&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>     
+                                                                      
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total<br> masculina departamental</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_masculino_dep&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total<br> masculina provincial</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_masculino_prov&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total <br> masculina distrital</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_masculino_dist&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total<br> femenina departamental</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_femenino_dep&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr> 
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total<br> femenina provincial</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_femenino_prov&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Población total<br> femenina distrital</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/geoserver/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Aig_pobtotal_femenino_dist&bbox=-81.3282318115234%2C-18.3509292602539%2C-68.6522750854492%2C-0.038605965673923&width=531&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><p class="extra">&nbsp;</p></td> 
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="lines"><img src="assets/img/iconos/descarga.png" alt=""><p> Delitos Criminalidad - 2023</p></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/Interoperabilidad/wms?service=WMS&version=1.1.0&request=GetMap&layers=Interoperabilidad%3Acb_delitos_2023&bbox=-81.3066177368164%2C-18.1249771118164%2C-69.0383148193359%2C-2.45053243637085&width=601&height=768&srs=EPSG%3A4326&styles=&format=application/openlayers','WMS')"><p class="extra">WMS</p></a></td>
+                                        <td class="lines"><a class="pointer" onclick="openModalServicios('https://geoespacial.inei.gob.pe/Interoperabilidad/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=Interoperabilidad%3Acb_delitos_2023&maxFeatures=50&outputFormat=application%2Fjson','WFS')"><p class="extra">WFS</p></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="line" colspan="3"></td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="laptop2">
+                            <img src="assets/img/servicios/servicio.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="metadatos">
+            <div class="container">
+                <div class="metadatos-container">
+                    <div class="metadatos">
+                        <div class="meta-img">
+                            <img src="assets/img/metadato/metadato.png" alt="">
+                        </div>
+                        <div class="tabla-metadatos">
+                            <div class="metadatos-titulo">
+                                <img src="assets/img/metadato/icono.png" alt="">
+                                <h2>CATÁLOGO DE METADATOS</h2>
+                            </div>
+                            <p>Los metadatos de la información georreferenciada constituyen elementos centrales en la Infraestructuras de Datos Espaciales del Perú, pues solo a través de estos es posible conocer las características de los datos existentes.</p>
+                            <div class="botones">
+                                <a href="assets/pdf/cataMeta-manual.pdf" target="_blank" class="btn-meta">
+                                    <img src="assets/img/iconos/usuario.png" alt="">
+                                    <p >Manual <br> de usuario</p>
+                                </a>
+                                <a href="https://metadatogis.inei.gob.pe/geonetwork/" target="_blank" class="btn-meta">
+                                    <img src="assets/img/iconos/ingresar.png" alt="">
+                                    <p >Ingresar</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="normas">
+            <div class="container">
+                <div class="normas-container">                
+                    <div class="normas">
+                        <div class="tabla-normas">
+                            <div class="normas-titulo">
+                                <img src="assets/img/normas/icono.png" alt="">
+                                <h2>NORMAS TÉCNICAS</h2>
+                            </div>
+                            <p>La norma técnica (NT) es un documento que contiene definiciones, requisitos, especificaciones de calidad, terminología, métodos de ensayo o información de rotulado. La elaboración de una NT está basada en resultados de la experiencia, la ciencia y del desarrollo tecnológico, de tal manera que se pueda estandarizar procesos, servicios y productos.</p>
+                            
+                        </div>
+                        <table>
+                            <tr class="cabecera">
+                                <td class="cat">NOMBRE</td>
+                                <td>OBJETO</td>
+                                <td>VER</td>
+                            </tr>
+                            <tbody class="body-scroll">
+                                <tr class="line">
+                                    <td class="cat"><p class="nombre">Decreto Supremo N° 133 - 2013 - PCM</p></td>
+                                    <td><p class="cuerpo">Establece mecanismos y lineamientos de aplicación nacional para el intercambio de datos georreferenciados entre entidades de la administración pública. Mediante esta norma, las entidades públicas que administran información geográfica del estado deberán implementar de manera progresiva conforme un Plan, servicios de acceso a esta información conforme unos estándares definidos por la SEGDI (ex-ONGEI).</p></td>
+                                    <td><a href="assets/pdf/dsn-133-2013-pcm.pdf" target="_blank"><img src="assets/img/iconos/ver.png" alt=""></a></td>
+                                </tr>
+                                <tr class="line">
+                                    <td class="cat"><p class="nombre">Resolución Ministerial 241 - 2014 - PCM, Directiva sobre Estándares de Servicios Web de Información Georreferenciada para el Intercambio de Datos entre Entidades de la Administración Pública</p></td>
+                                    <td><p class="cuerpo">Establece mecanismos y lineamientos de aplicación nacional para el intercambio de datos georreferenciados entre entidades de la administración pública. Mediante esta norma, las entidades públicas que administran información geográfica del estado deberán implementar de manera progresiva conforme un Plan, servicios de acceso a esta información conforme unos estándares definidos por la SEGDI (ex-ONGEI).</p></td>
+                                    <td><a href="assets/pdf/rm-241-2014-pcm_estandaresserviciosinformacionespacial.pdf" target="_blank"><img src="assets/img/iconos/ver.png" alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td class="cat"><p class="nombre">Decreto Supremo N° 086 - 2012 - PCM</p></td>
+                                    <td><p class="cuerpo">Crear el Portal del Comité Coordinador Permanente de la Infraestructura de Datos Espaciales del Perú - CCIDEP – www.ccidep.gob.pe, como un sistema informativo donde se difunde el marco de los estándares y procedimientos de la IDEP.</p></td>
+                                    <td><a href="assets/pdf/ds-086-2012-pcm-crea-ccidep.pdf" target="_blank"><img src="assets/img/iconos/ver.png" alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="capas">
+            <div class="container">
+                <div class="capas-container">
+                    <div class="capas">
+                        <div class="capa">
+                            <img src="assets/img/capas/capas.png" alt=""  style="width: 100%;">
+                        </div>
+                        <div class="tabla-capas">
+                            <div class="capas-titulo">
+                                <img src="assets/img/capas/icono.png" alt="">
+                                <h2>DESCARGA DE CAPAS
+                                    CARTOGRÁFICAS</h2>
+                            </div>
+                            <p>Es posible descargar la información geográfica vectorial completa, su geometría y tabla de atributos asociada. Podrá encontrar una lista de capas que permiten la descarga o extracción de datos en formatos Geo Package “GPKG” .</p>
+                            <div class="tabla">
+                                <table>
+
+                                    <tr class="cabecera">
+                                        <td class="cat">CATEGORÍA</td>
+                                        <td></td>
+                                        <td>NOMBRE</td>
+                                    </tr>
+                                    <tbody class="body">
+                                        <tr>
+                                            <td rowspan="3" class="cat"><p>Límites</p></td>
+                                            <td>&nbsp;</td>
+                                            <td class="line lines"><a href="https://ide.inei.gob.pe/files/Departamento.rar"  target="_blank"><img src="assets/img/iconos/descarga.png" alt=""><p> Departamental (Actualizado al 2023)</p></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="line lines"><a href="https://ide.inei.gob.pe/files/Provincia.rar"  target="_blank"><img src="assets/img/iconos/descarga.png" alt=""><p> Provincial (Actualizado al 2023)</p></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="lines"><a href="https://ide.inei.gob.pe/files/Distrito.rar"  target="_blank"><img src="assets/img/iconos/descarga.png" alt=""><p> Distrital (Actualizado al 2023)</p></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" class="line"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="geo">
+            <div class="container">
+                <div class="geo-container">                
+                    <div class="geo">
+                        <div class="tabla-geo">
+                            <div class="geo-titulo">
+                                <img src="assets/img/geo/icono.png" alt="">
+                                <h2>GEODATOS PERÚ</h2>
+                            </div>
+                            <p>El poblamiento de capas se encuentra en constante actualización, por lo cual toda la información territorial podría contener diferencias o inconsistencias en relación al objeto o fenómeno que se está representando. Ante cualquier duda, el usuario puede verificar su exactitud y vigencia solicitando el detalle correspondiente.</p>
+                            <button class="btn-meta">
+                                <img src="assets/img/iconos/ingresar.png" alt="">
+                                <a href="https://geodatos.inei.gob.pe/map/" target="_blank">Ingresar</a>
+                            </button>
+                        </div>
+                        <div class="geos">
+                            <img src="assets/img/geo/geo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="logos">
+                    <img src="assets/img/footer/inei.png" alt="" style="width: 150px;">
+                    <img src="assets/img/footer/cm.png" alt="">
+                </div>
+                <p>Av. Gral. Garzón 654 - 658, Jesús María Lima - Perú <br>
+                    Teléfono: 652 0000 / 203 2640  <br>
+                    infoinei@inei.gob.pe   </p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal modal-servicios hide">
+        <section>
+            <span onclick="cerrarModal()" class="close-modal">
+                <img src="assets/img/iconos/close-modal.svg" alt="">
+            </span>
+            <h2>DETALLE DE SERVICIO</h2>
+            <p> <b>Tipo de servicio :</b>  <span id="servicetype"> </span></p>
+            <p>
+                <b>URL del servicio :</b> <br>
+                <input id="url" value=" " type="text">
+            </p>
+    
+            <p class="content-button-copy">
+                <button id="btnCopiar">
+                    Copiar al portapapeles
+                    <img src="assets/img/iconos/icon-copy.svg" alt="">
+                </button>
+            </p>
+    
+        </section>
+    </div>
+</body>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/copy.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</html>
+
