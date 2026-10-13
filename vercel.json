@@ -3,7 +3,8 @@
   "services": {
     "api": {
       "root": "apps/api",
-      "framework": "nestjs",
+      "framework": "express",
+      "entrypoint": "src/main.ts",
       "installCommand": "npm ci --prefix ../..",
       "buildCommand": "npm run build --prefix ../.. --workspace @sigra/domain && npm run build --prefix ../.. --workspace @sigra/api",
       "functions": {
