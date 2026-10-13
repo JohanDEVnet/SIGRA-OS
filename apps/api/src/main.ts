@@ -1,13 +1,22 @@
-import 'reflect-metadata';
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module.js';
-import { createApiGuard } from './api-guard.js';
-import type { INestApplication } from '@nestjs/common';
+interface NestApplication {
+  setGlobalPrefix(prefix: string): void;
+  enableCors(options: Record<string, unknown>): void;
+  use(middleware: unknown): void;
+  init(): Promise<unknown>;
+  listen(port: number, host: string): Promise<unknown>;
+  getHttpAdapter(): { getInstance(): (req: unknown, res: unknown) => unknown };
+}
 
-let cachedApp: INestApplication | undefined;
+let cachedApp: NestApplication | undefined;
 
-export async function bootstrapServer(): Promise<INestApplication> {
+export async function bootstrapServer(): Promise<NestApplication> {
   if (!cachedApp) {
+    await import('reflect-metadata');
+    const [{ NestFactory }, { AppModule }, { createApiGuard }] = await Promise.all([
+      import('@nestjs/core'),
+      import('./app.module.js'),
+      import('./api-guard.js'),
+    ]);
     const app = await NestFactory.create(AppModule);
     app.setGlobalPrefix('api/v1');
     const corsOriginsConfig = process.env.CORS_ORIGINS?.trim();
@@ -23,19 +32,27 @@ export async function bootstrapServer(): Promise<INestApplication> {
     });
     app.use(createApiGuard({ apiKey: process.env.API_KEY, log: entry => console.log(JSON.stringify(entry)) }));
     await app.init();
-    cachedApp = app;
+    cachedApp = app as unknown as NestApplication;
   }
   return cachedApp;
 }
 
 // Exportación por defecto requerida por Vercel Serverless Functions
 export default async function handler(req: any, res: any) {
-  const app = await bootstrapServer();
-  const instance = app.getHttpAdapter().getInstance();
-  if (req.url && !req.url.startsWith('/api') && req.url.startsWith('/v1')) {
-    req.url = '/api' + req.url;
+  try {
+    const app = await bootstrapServer();
+    const instance = app.getHttpAdapter().getInstance();
+    if (req.url && !req.url.startsWith('/api') && req.url.startsWith('/v1')) {
+      req.url = '/api' + req.url;
+    }
+    return instance(req, res);
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : 'Error desconocido al iniciar NestJS.';
+    console.error(JSON.stringify({ event: 'api_bootstrap_failed', detail }));
+    res.statusCode = 500;
+    res.setHeader('Content-Type', 'application/json; charset=utf-8');
+    return res.end(JSON.stringify({ error: 'API_BOOTSTRAP_FAILED', detail }));
   }
-  return instance(req, res);
 }
 
 // Ejecución local (cuando no está corriendo en Vercel)
