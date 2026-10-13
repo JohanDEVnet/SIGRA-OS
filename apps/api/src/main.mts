@@ -37,7 +37,6 @@ export async function bootstrapServer(): Promise<NestApplication> {
   return cachedApp;
 }
 
-// Exportación por defecto requerida por Vercel Serverless Functions
 export default async function handler(req: any, res: any) {
   try {
     const app = await bootstrapServer();
@@ -55,7 +54,6 @@ export default async function handler(req: any, res: any) {
   }
 }
 
-// Ejecución local (cuando no está corriendo en Vercel)
 if (!process.env.VERCEL) {
   bootstrapServer().then(async (app) => {
     const rawPort = process.env.PORT?.trim();
@@ -66,4 +64,3 @@ if (!process.env.VERCEL) {
     process.exitCode = 1;
   });
 }
-

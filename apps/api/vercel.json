@@ -5,7 +5,7 @@
   "buildCommand": "npm run build --prefix ../.. --workspace @sigra/domain && npm run build --prefix ../.. --workspace @sigra/api",
   "fluid": true,
   "functions": {
-    "src/main.ts": {
+    "src/main.mts": {
       "maxDuration": 120
     }
   }

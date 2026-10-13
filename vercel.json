@@ -7,7 +7,7 @@
       "installCommand": "npm ci --prefix ../..",
       "buildCommand": "npm run build --prefix ../.. --workspace @sigra/domain && npm run build --prefix ../.. --workspace @sigra/api",
       "functions": {
-        "src/main.ts": {
+        "src/main.mts": {
           "maxDuration": 120
         }
       }

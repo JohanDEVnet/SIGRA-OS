@@ -6,7 +6,7 @@ Estado al 12 de octubre de 2026: configuración preparada; publicación y conexi
 
 Crear un proyecto Vercel Services desde la raíz del monorepositorio. El `vercel.json` raíz define `web` para `apps/web` y `api` para `apps/api`. React recibe el tráfico de `/` y NestJS recibe `/api/*` conservando la ruta original, por ejemplo `/api/v1/health`. NestJS consulta las fuentes oficiales y puede guardar respuestas agregadas en Supabase. La web pública no requiere iniciar sesión.
 
-Vercel reconoce `src/main.ts` como entrada NestJS y empaqueta la aplicación en una función. Esta configuración conserva los nueve servicios HTTP dentro de una API modular. El despliegue no convierte automáticamente los módulos en nueve procesos independientes. [Soporte oficial de NestJS](https://vercel.com/docs/frameworks/backend/nestjs).
+Vercel reconoce `src/main.mts` como entrada NestJS y empaqueta la aplicación en una función ESM. La extensión explícita evita que el runtime de Services interprete el archivo generado como CommonJS. Esta configuración conserva los nueve servicios HTTP dentro de una API modular. El despliegue no convierte automáticamente los módulos en nueve procesos independientes. [Soporte oficial de NestJS](https://vercel.com/docs/frameworks/backend/nestjs).
 
 ## Comprobación de accesos
 
@@ -33,7 +33,7 @@ Los comandos con `--prefix ../..` permiten usar `package-lock.json`, npm workspa
 
 No hay bindings entre `web` y `api`. Vite produce archivos estáticos y el navegador llama públicamente a `/api/v1/...` en el mismo dominio. Los bindings solo están disponibles para código de servidor ejecutado en funciones; se añadirían si en el futuro otro backend llamara internamente a `api`. [Service bindings](https://vercel.com/docs/services/bindings).
 
-La API utiliza Fluid compute y solicita `maxDuration: 120` para `src/main.ts`. Sus consultas individuales tienen un tiempo límite de 25 segundos y reintentos; la composición tiene un presupuesto de 85 segundos. Confirmar que el proyecto aplica los 120 segundos en el resumen de la función publicada. [Configuración de duración](https://vercel.com/docs/functions/configuring-functions/duration), [vercel.json](https://vercel.com/docs/project-configuration/vercel-json).
+La API utiliza Fluid compute y solicita `maxDuration: 120` para `src/main.mts`. Sus consultas individuales tienen un tiempo límite de 25 segundos y reintentos; la composición tiene un presupuesto de 85 segundos. Confirmar que el proyecto aplica los 120 segundos en el resumen de la función publicada. [Configuración de duración](https://vercel.com/docs/functions/configuring-functions/duration), [vercel.json](https://vercel.com/docs/project-configuration/vercel-json).
 
 ## Variables por proyecto
 
@@ -51,7 +51,7 @@ Configurar valores en Vercel para Production y, si se van a probar, Preview. Cam
 
 `VITE_API_URL` se incorpora al JavaScript compilado. Cualquier variable `VITE_*` es pública; no colocar allí una clave Supabase de servidor, `API_KEY`, contraseña ni cadena Postgres. [Vite en Vercel](https://vercel.com/docs/frameworks/frontend/vite), [claves Supabase](https://supabase.com/docs/guides/getting-started/api-keys).
 
-Los `.env.example` no contienen credenciales. NestJS lee `process.env`; el arranque actual no carga automáticamente archivos `.env`. En desarrollo se pueden definir variables en PowerShell o pasar un archivo local con `node --env-file=apps/api/.env apps/api/dist/main.js` después de compilar. Vite sí lee su `.env.local` en `apps/web`.
+Los `.env.example` no contienen credenciales. NestJS lee `process.env`; el arranque actual no carga automáticamente archivos `.env`. En desarrollo se pueden definir variables en PowerShell o pasar un archivo local con `node --env-file=apps/api/.env apps/api/dist/main.mjs` después de compilar. Vite sí lee su `.env.local` en `apps/web`.
 
 ## Publicar sin obligar a crear un repositorio Git
 
