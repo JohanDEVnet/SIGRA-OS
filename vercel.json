@@ -8,7 +8,8 @@
       "buildCommand": "npm run build --prefix ../.. --workspace @sigra/domain && npm run build --prefix ../.. --workspace @sigra/api",
       "functions": {
         "src/main.mts": {
-          "maxDuration": 120
+          "maxDuration": 120,
+          "includeFiles": "package.json"
         }
       }
     },

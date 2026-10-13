@@ -6,7 +6,8 @@
   "fluid": true,
   "functions": {
     "src/main.mts": {
-      "maxDuration": 120
+      "maxDuration": 120,
+      "includeFiles": "package.json"
     }
   }
 }
