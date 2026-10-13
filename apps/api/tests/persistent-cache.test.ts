@@ -55,6 +55,16 @@ test('fallo de Supabase no rompe datos oficiales y health no afirma conexión co
   assert.equal(result.data.population, 70074); assert.equal(result.meta.status, 'ok'); assert.equal(transport.persistenceStatus().status, 'degraded');
   assert.ok(result.meta.warnings.some(w => w.includes('no se pudo guardar')));
 });
+test('configuración Supabase inválida no derriba la API y se informa en health', () => {
+  const transport = new ProviderTransport(upstream, () => initialTime, {
+    persistentStore: null,
+    persistenceConfigurationError: 'SUPABASE_SECRET_KEY debe ser secret o service_role de servidor.',
+  });
+  const status = transport.persistenceStatus();
+  assert.equal(status.configured, true);
+  assert.equal(status.status, 'misconfigured');
+  assert.match(status.configurationError!, /SUPABASE_SECRET_KEY/);
+});
 test('IGP real se recupera desde Supabase tras reinicio y no rejuvenece fechas', async () => {
   const store = new MemoryStore();
   const first = await new PublicProviders(async () => new Response(JSON.stringify(fixture('igp').records)), () => initialTime, undefined, { retries: 0, persistentStore: store }).igp(2026);

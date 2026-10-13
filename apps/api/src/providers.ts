@@ -21,7 +21,17 @@ export class PublicProviders {
   private geographyAdapter: GeographyAdapter;
   private localitiesAdapter: LocalitiesAdapter;
   constructor(fetcher: typeof fetch = fetch, private now: () => number = Date.now, private ttlOverrideMs?: number, options: TransportOptions = {}) {
-    this.transport = new ProviderTransport(fetcher, now, { ...options, persistentStore: options.persistentStore === undefined ? createSupabaseCacheFromEnv() : options.persistentStore });
+    let persistentStore = options.persistentStore;
+    let persistenceConfigurationError = options.persistenceConfigurationError;
+    if (persistentStore === undefined) {
+      try {
+        persistentStore = createSupabaseCacheFromEnv();
+      } catch (error) {
+        persistentStore = null;
+        persistenceConfigurationError = error instanceof Error ? error.message : 'Configuración Supabase inválida.';
+      }
+    }
+    this.transport = new ProviderTransport(fetcher, now, { ...options, persistentStore, persistenceConfigurationError });
     this.populationAdapter = new PopulationAdapter(this.transport, now);
     this.geographyAdapter = new GeographyAdapter(this.transport);
     this.localitiesAdapter = new LocalitiesAdapter(this.transport);

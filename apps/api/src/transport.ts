@@ -4,7 +4,7 @@ export interface ProviderTrace { startedAt: string; finishedAt: string; duration
 export interface ProviderMetadata { source: string; sourceUrl: string; obtainedAt: string; status: 'ok' | 'degraded'; fromCache: boolean; warnings: string[]; dateOfData?: string | null; durationMs?: number; trace?: ProviderTrace; dateRange?: { from: string; to: string }; datasetDistrictCount?: number; cacheLayer?: 'memory' | 'supabase' }
 export interface ProviderEnvelope<T> { data: T; meta: ProviderMetadata }
 export interface Parsed<T> { data: T; warnings: string[]; dateOfData?: string | null }
-export interface TransportOptions { timeoutMs?: number; retries?: number; sleep?: (ms: number) => Promise<void>; staleMaxMs?: number; persistentStore?: PersistentCacheStore | null }
+export interface TransportOptions { timeoutMs?: number; retries?: number; sleep?: (ms: number) => Promise<void>; staleMaxMs?: number; persistentStore?: PersistentCacheStore | null; persistenceConfigurationError?: string }
 export interface ProviderState { id: string; name: string; sourceUrl: string; status: 'not-queried' | 'ok' | 'degraded' | 'unavailable' | 'not-integrated'; lastChecked: string | null; lastSuccess: string | null; detail: string; durationMs?: number; trace?: ProviderTrace }
 interface CacheEntry { envelope: ProviderEnvelope<unknown>; storedAt: number; ttlMs: number; origin?: 'supabase' }
 class UpstreamError extends Error { constructor(public kind: 'invalid' | 'upstream' | 'timeout', public httpStatus?: number) { super(kind); } }
@@ -16,8 +16,14 @@ export class ProviderTransport {
   private persistenceLastStatus: 'not-queried' | 'ok' | 'degraded' = 'not-queried';
   constructor(private fetcher: typeof fetch = fetch, private now: () => number = Date.now, private options: TransportOptions = {}) {}
   persistenceStatus() {
-    const configured = Boolean(this.options.persistentStore);
-    return { configured, status: configured ? this.persistenceLastStatus : 'disabled', ...this.persistenceChecks };
+    const misconfigured = Boolean(this.options.persistenceConfigurationError);
+    const configured = Boolean(this.options.persistentStore) || misconfigured;
+    return {
+      configured,
+      status: misconfigured ? 'misconfigured' : configured ? this.persistenceLastStatus : 'disabled',
+      configurationError: this.options.persistenceConfigurationError ?? null,
+      ...this.persistenceChecks,
+    };
   }
   async json<T>(key: string, source: string, url: string, ttlMs: number, parse: (input: unknown) => Parsed<T>, codec?: PersistenceCodec<T>): Promise<ProviderEnvelope<T>> {
     return this.load(key, source, url, ttlMs, async (response) => parse(await response.json()), codec);
